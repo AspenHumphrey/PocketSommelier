@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      wineId: {
+      WineId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -20,7 +20,7 @@ module.exports = {
         onUpdate: 'cascade',
         onDelete: 'cascade'
       },
-      cheeseId: {
+      CheeseId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
@@ -30,6 +30,12 @@ module.exports = {
         onUpdate: 'cascade',
         onDelete: 'cascade'
       },
+        createdAt: {
+          type: Sequelize.DATE
+        },
+        updatedAt: {
+          type: Sequelize.DATE
+      }
     })
   },
   down: function(queryInterface, Sequelize) {

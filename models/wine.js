@@ -9,8 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Wine.associate = (models) => {
     Wine.belongsToMany(models.Cheese, {
-      through: 'WineCheeses',
-      foreignKey: 'wineId'
+      through: 'WineCheeses'
     });
   };
 
