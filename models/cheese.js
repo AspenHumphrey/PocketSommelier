@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
 
   Cheese.associate = (models) => {
     Cheese.belongsToMany(models.Wine, {
-      through: 'WineCheeses'
+      through: 'WineCheeses',
+      foreignKey: 'cheeseId'
     });
   };
 
