@@ -1,4 +1,4 @@
-{ "cheese": 
+{ "cheeses": 
   [
     {
       "name": "Brie", "type": "Soft", "flavorProfile": "Brie is milder. It has a creamy, buttery texture, with a fruity, mild, nutty taste. It light cream in color", "image": "./images/brie.jpg"
@@ -33,15 +33,15 @@
     },{
       "name": "Gruyere", "type": "Hard", "flavorProfile": "Gruyère is sweet but slightly salty, with a flavor that varies widely with age. It is often described as creamy and nutty when young, becoming more assertive, earthy, and complex as it matures. When fully aged (five months to a year) it tends to have small cracks which impart a slightly grainy texture.", "image": "./images/gruyere.jpg"
     },{
-      "name": "Mascarpone", "type": "Soft", "flavorProfile": " Mascarpone is an Italian cheese from the Lombardy region, made by curdling milk cream with citric acid or acetic acid. It is a thick, double or triple cream, soft cheese with a very high fat content ranging from 60% to 75%.", "image": "./images/mascarpone.jpg"
+      "name": "Mozzarella", "type": "Semi-Soft", "flavorProfile": "Mozerella is a white cheese with a milky flavor and has a springy, stringy, yet supple texture.", "image": "./images/mozzarella.jpg"
     },{
-      "name": "Boursin", "type": "Soft", "flavorProfile": "Boursin is a fresh cream and soft cheese, flavoured with herbs and spices.", "image": "./images/boursin"
-    },{
+      "name": "Monterary Jack", "type": "Soft", "flavorProfile": "Boursin is a fresh cream and soft cheese, flavoured with herbs and spices.", "image": "./images/boursin"
+    }, { 
+      "name": "Ricotta", "type": "Soft", "flavorProfile": "Ricotta is a sweet white cheese with a fresh aroma. It has a creamy and fluffy texture.", "image": "./images/ricotta.jpg"
+    }, {
       "name": "Chevre", "type": "Soft", "flavorProfile": "Firm yet soft in texture, Chevre is white in color and has an earthy, tangy, and tart taste.", "image": "./images/chervre.jpg"
     },{
       "name": "Muenster", "type": "Soft", "flavorProfile": "ELastic, smooth, and supple in texture with a pale yellow color. It has a mild, savory, and sharp taste.", "image": "./images/meunster.jpg"
-    },{
-      "name": "Wensleydale", "type": "Hard", "flavorProfile": "Crumbly, open, and supple in texture. It is a pale yellow color that is acidic, buttery, mild, salty, and sweety in taste.", "image": "./images/wenslesydale.jpg"
     },{
       "name": "Asiago", "type": "Hard", "flavorProfile": "Asiago is compact, crumbly, open, and smooth in texture and yellow in color. It is full-flavored and pungent- mild, milky, and sharp in taste.", "image": "./images/asiago.jpg"
     },{

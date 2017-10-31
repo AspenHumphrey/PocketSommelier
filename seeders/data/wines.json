@@ -1,4 +1,4 @@
-{ "wine":
+{ "wines":
   [{
     "name": "Cabernet Franc", "type": "Red", "flavorProfile": "The wine is loved for its savory, bell pepper-like flavors, medium-high acidity and mouthwatering taste.", "image": "./images/CabernetFranc.jpg"
   },{
