@@ -3,11 +3,12 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getAllCheese, getOneWineAllCheeses } = require('../controllers/cheeseCtrl');
+const { getAllCheese, getOneCheeseAllWines } = require('../controllers/cheeseCtrl');
 
-// all Categories will be shown at all times like a nav bar 
+// all cheeses are shown
 router.get('/cheese', getAllCheese);
-router.get('/cheese/:id', getOneWineAllCheeses);
+// one cheese is shown with the related wines
+router.get('/cheese/:id', getOneCheeseAllWines);
 
 
 module.exports = router;

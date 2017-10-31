@@ -5,10 +5,13 @@ const router = Router();
 
 const { getAllWine, getOneWineAllCheeses, getRandomPair, getAllPairs } = require('../controllers/wineCtrl');
 
-// all Categories will be shown at all times like a nav bar 
+// all wines are shown
 router.get('/wine', getAllWine);
+// one wine is shown with the related cheeses
 router.get('/wine/:id', getOneWineAllCheeses);
+// random pair is generated
 router.get('/pair', getRandomPair);
+// all pairs are displayed
 router.get('/pair/all', getAllPairs)
 
 

@@ -1,6 +1,6 @@
 'use strict';
 
-// get all cheese: name, image
+// get all cheeses and info.
 module.exports.getAllCheese = (req, res, next) => {
   const { Cheese } = req.app.get('models');
   Cheese.findAll()
@@ -15,7 +15,7 @@ module.exports.getAllCheese = (req, res, next) => {
 
 
 // get one cheese with all wine
-module.exports.getOneWineAllCheeses = (req, res, next) => {
+module.exports.getOneCheeseAllWines = (req, res, next) => {
   const { Cheese, Wine } = req.app.get('models');
     Cheese.findById(req.params.id, {
       include: [{ model: Wine }]
