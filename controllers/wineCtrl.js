@@ -30,6 +30,9 @@ module.exports.getOneWineAllCheeses = (req, res, next) => {
 
 
 
+// the below function needs to be updated to call to all the wines 
+// and count them in order to get the random number other than a 
+// "magic number" get all then return count then pass to math.random.
 function getRandomArbitrary() {
   return Math.floor(Math.random() * (17 - 1) + 1);
 }
@@ -37,20 +40,30 @@ function getRandomArbitrary() {
 module.exports.getRandomPair = (req, res, next) => {
   const { Wine, Cheese } = req.app.get('models');
   let randomWine = getRandomArbitrary();
-  
   Wine.findOne({
     raw: true, where: { id : randomWine }, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
     res.send(JSON.stringify( wine ));
+    // res.render('product', { product });
   })
   .catch( ( err) => {
     next( err );
   });
 };
 
-// call to all the wines and count them in order to get the random number other than a "magic number"
-// get all then return count then pass to math.random.
+// get all pairs of wine and cheese
+module.exports.getAllPairs = (req, res, next) => {
+  const { Wine, Cheese } = req.app.get('models');
+  Wine.findAll({
+    raw: true, include: [{ model: Cheese }]
+  })
+  .then( ( wine ) => {
+    res.send(JSON.stringify( wine ));
+    // res.render('product', { product });
+  })
+}
+
 
 
 // gets one wine on key word search
