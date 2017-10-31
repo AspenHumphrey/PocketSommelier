@@ -1,0 +1,36 @@
+{ "wines":
+  [{
+    "name": "Cabernet Franc", "type": "Red", "flavorProfile": "The wine is loved for its savory, bell pepper-like flavors, medium-high acidity and mouthwatering taste.", "image": "./images/CabernetFranc.jpg"
+  },{
+    "name": "Cabernet Sauvignon", "type": "Red", "flavorProfile": "Cabs are decidedly dry in style and range from medium-bodied to full-bodied, with dark fruit flavors and savory tastes from black pepper to bell pepper.", "image": "./images/CabernetSauvignon.jpg"
+  },{
+    "name": "Chardonnay", "type": "White", "flavorProfile": "Chardonnay brings an impressive range of flavors from the expected buttered, oak influences to the fresh, fruit flavors of apple, pear, tropical, citrus and melon, leaving a lasting palate impression.", "image": "./images/Chardonnay.jpg"
+  },{
+    "name": "Chenin Blanc", "type": "White", "flavorProfile": "It is versatile in style and sweetness and has the ability to adapt to a wide variety of tastes. We have lithe, dry summer whites and sparkling wines, ranging from Brut (dry) to Demi-Sec (aromatic and sweet), as well as oak-aged styles similar to Chardonnay.", "image": "./images/ChaninBlanc.jpg"
+  },{
+    "name": "Gewurztraminer", "type": "White", "flavorProfile": "Gewürztraminer flavors and aromas include spices, roses, passion fruit, and lychees.", "image": "./images/Gewurztraminer.jpg"
+  },{
+    "name": "Merlot", "type": "Red", "flavorProfile": "Cool climate  Merlot is more structured with a higher presence of tannins and earthy flavors like tobacco and tar. Some cool climate Merlot are mistaken as Cabernet Sauvignon. Warm climate Merlot wine is more fruit-forward and tannin is less prevalent. Some producers use judicious oak-treatment of up to 24 months to give their Merlot wine more structure.", "image": "./images/Merlot.jpg"
+  }, {
+    "name": "Pinot Blanc", "type": "White", "flavorProfile": "A Dry White Wine You're Drinking Without Knowing It. Pinot Blanc (or Pinot Bianco) is a semi-dry white wine that is often compared to Chardonnay. It is typically crisp and refreshing and, depending on where it's made, it can be sweet or have nutty flavors.", "image": "./images/PinotBlanc.jpg"
+  }, {
+    "name": "Pinot Gris", "type": "White", "flavorProfile": "Aromas run the gamut with lemon-lime themes, to apple and pear, or stone fruit factors (like peach and apricot - especially in warmer climates), with the hallmark aromas of almond, baking spices, or honeysuckle making its mark.", "image": "./images/PinotGris"
+  }, {
+    "name": "Pinot Noir", "type": "Red", "flavorProfile": "Flavors and aromas include roses, fruits, black cherry, berry, and currant. Other Pinot Noir characteristics include high acidity and low tannins.", "image": "./images/PinotNoir.jpg"
+  }, {
+    "name": "Port", "type": "Red", "flavorProfile": "Port is a sweet wine with flavors of raspberry, blackberry, caramel, cinnamon and chocolate sauce. There are several different kinds of port, but the 2 primary styles of Port include a red Port with more berry and chocolate flavors (and slightly less sweetness), and a tawny-colored Port with more caramel and nut flavors (and more sweetness).", "image": "./images/redredwine.jpg"
+  }, {
+    "name": "Reisling", "type": "White", "flavorProfile": "Dry Riesling: Riesling from Alsace, “Trocken” German Riesling, most VDP German Riesling, Washington State Riesling labeled “dry,” most New York Riesling, and most Australian Riesling from Clare and Eden Valleys. Sweet Riesling: German Pradikat Riesling (including Kabinett, Spätlese, etc), most value-driven Riesling (sub-$10) and Riesling labeled “sweet” or “feinherb.”", "image": "./images/Reisling.jpg"
+  }, {
+    "name": "Sangiovese", "type": "Red", "flavorProfile": "A Sangiovese with high tannins will work perfectly with rich roasted meat, cured sausages and hard cheeses. When pairing Sangiovese wine with vegetarian fare, be sure to work with lipids like butter and olive oil so that the richness in the fat helps cut through the wines' tannins.", "image": "./images/Sangiovese.jpg"
+  }, {
+    "name": "Sauvgnon Blanc", "type": "White", "flavorProfile": "In general, Sauvignon Blanc, also known as Fumé Blanc, is usually a dry white wine with powerful aromatics ranging from juicy citrus to distinctive herbaceous aromas often leaning into the sweet smell of fresh cut grass and dried Italian herbs.", "image": "./images/SauvignonBlanc.jpg"
+  }, {
+    "name": "Syrah", "type": "Red", "flavorProfile": "Syrah is responsible for some of the darkest full-bodied red wines in the world. It has dark fruit flavors from sweet blueberry to savory black olive. When you taste Syrah you'll be greeted with a punch of flavor that tapers off and then has a spicy peppery note in the aftertaste.", "image": "./images/Syrah.jpg"
+  }, {
+    "name": "Zinfandel", "type": "Red", "flavorProfile": "Zinfandel is lighter in color than both Cabernet Sauvignon and Merlot. However, although a light-bodied red wine like Pinot Noir, Zin's moderate tannin and high acidity make it taste bold. Generally speaking, mostZinfandel wines have higher alcohol levels ranging from about 14 – 17% ABV.", "image": "./images/Zinfandel.jpg"
+  }, {
+    "name": "Malbec", "type": "Red", "flavorProfile": " Malbec is characterized by its deeply hued purple color, often described as inky red.  The flavors of Malbecs tend to be very lush and full of ripe, juicy berries and purple fruits (i.e. plums), often with herbal, licorice/anise, or purple floral notes (i.e.violet). Malbecs are generally bold and earthy with an intense, full bodied mouth feel.  Renowned wine expert Jancis Robinson once described Malbec as being the more rustic cousin of Merlot.", "image": "./images/Malbec.jpg"
+  }
+  ]
+}

@@ -1,0 +1,53 @@
+{ "cheeses": 
+  [
+    {
+      "name": "Brie", "type": "Soft", "flavorProfile": "Brie is milder. It has a creamy, buttery texture, with a fruity, mild, nutty taste. It light cream in color", "image": "./images/brie.jpg"
+    },{
+      "name": "Camembert", "type": "Soft", "flavorProfile": "Camembert has a deeper, more earthy and intense flavor and aroma. It has a supple, soft, smooth texture with buttery, creamy, milky-sweet flavors. It is a pale yellow color.", "image": "./images/camembert.jpg"
+    },{
+      "name": "Goat Cheese", "type": "Semi-Soft", "flavorProfile": "Goat Cheese is often described as having a tart, earthy flavor. It is white in color and has a creamy, crumbly, and firm texture.", "image": "./images/goatcheese"
+    },{
+      "name": "Blue", "type": "Semi-Soft", "flavorProfile": "Best described as sharp, tangy, and salty in flavor and creamy in texture.", "image": "./images/blue.jpg"
+    },{
+      "name": "Cheddar", "type": "Hard", "flavorProfile": "Creamy and sharp, also one of the most easily digested cheeses. It is compact and crumbly in texture and pale yellow in color", "image": "./images/cheddar"
+    },{
+      "name": "Fontina", "type": "Semi-Soft", "flavorProfile": "A mild nutty flavor, with a mild hint of honey. Fontina has a dark golden brown rind and a pale yellow interior dotted with tiny holes.", "image": "./images/fontina"
+    },{
+      "name": "Gorgonzola", "type": "Soft", "flavorProfile": "Pale yellow color and crumbly and soft in texture with a nutty armoa. It can have a mild to sharp taste depending on its age.", "image": "./images/gorgonzola.jpg"
+    },{
+      "name": "Gouda", "type": "Semi-Hard", "flavorProfile": "When a Gouda is aged the cheese changes in flavor and texture- the flavor gets stronger. Aged Gouda is sharp yet sweet at the same time. It has a caramelly, nutty, and buttery taste. Yellow in color.", "image": "./images/gouda.jpg"
+    },{
+      "name": "Port Salut", "type": "Semi-Soft", "flavorProfile": "Port Salut is a semi-soft natural cheese that is most recognized by its orange rind. Don't be put off by the smell—which can be strong because it's a washed rind cheese. It will still have a relatively mild flavor—savory and slightly sweet.", "image": "./images/portsalut.jpg"
+    },{
+      "name": "Swiss", "type": "Hard", "flavorProfile": "The flavor is mild, sweet and nut-like. Swiss cheese is known for being shiny, pale yellow, and having large holes (called eyes) resulting from carbon dioxide released during the maturation process.", "image": "./images/swiss.jpg"
+    },{
+      "name": "Colby", "type": "Semi-Hard", "flavorProfile": "Firm and springy, Colby is a rindless, mild, and sweet, yellow cheese", "image": "./images/"
+    },{
+      "name": "Danish Blue", "type": "Semi-Soft", "flavorProfile": "Sharp and Salty", "image": "./images/danishblue.jpg"
+    },{
+      "name": "Parmesan", "type": "Hard", "flavorProfile": "True Parmigiano-Reggiano cheese has a sharp, complex fruity/nutty taste with a strong savory flavor and a slightly gritty texture. Inferior versions can impart a bitter taste.", "image": "./images/parmesan.jpg"
+    },{
+      "name": "Roquefort", "type": "Semi-Soft", "flavorProfile": "During the curing period, the Roquefort molds develop to create the exquisitely strong, sweet-caramel, yet spicy flavor and aroma of original Roquefort.", "image": "./images/roquefort.jpg"
+    },{
+      "name": "Provolone", "type": "Semi-Hard", "flavorProfile": "Provolone cheese is also classified into two forms: Provolone Dolce, which is aged for 2-3 months, has a pale yellow to white colour and sweet taste. The other,Provolone Piccante is aged for more than four months and has a sharper taste.", "image": "./images/provolone.jpg"
+    },{
+      "name": "Gruyere", "type": "Hard", "flavorProfile": "Gruyère is sweet but slightly salty, with a flavor that varies widely with age. It is often described as creamy and nutty when young, becoming more assertive, earthy, and complex as it matures. When fully aged (five months to a year) it tends to have small cracks which impart a slightly grainy texture.", "image": "./images/gruyere.jpg"
+    },{
+      "name": "Mozzarella", "type": "Semi-Soft", "flavorProfile": "Mozerella is a white cheese with a milky flavor and has a springy, stringy, yet supple texture.", "image": "./images/mozzarella.jpg"
+    },{
+      "name": "Monterary Jack", "type": "Soft", "flavorProfile": "Boursin is a fresh cream and soft cheese, flavoured with herbs and spices.", "image": "./images/boursin"
+    }, { 
+      "name": "Ricotta", "type": "Soft", "flavorProfile": "Ricotta is a sweet white cheese with a fresh aroma. It has a creamy and fluffy texture.", "image": "./images/ricotta.jpg"
+    }, {
+      "name": "Chevre", "type": "Soft", "flavorProfile": "Firm yet soft in texture, Chevre is white in color and has an earthy, tangy, and tart taste.", "image": "./images/chervre.jpg"
+    },{
+      "name": "Muenster", "type": "Soft", "flavorProfile": "ELastic, smooth, and supple in texture with a pale yellow color. It has a mild, savory, and sharp taste.", "image": "./images/meunster.jpg"
+    },{
+      "name": "Asiago", "type": "Hard", "flavorProfile": "Asiago is compact, crumbly, open, and smooth in texture and yellow in color. It is full-flavored and pungent- mild, milky, and sharp in taste.", "image": "./images/asiago.jpg"
+    },{
+      "name": "Edam", "type": "Semi-Hard", "flavorProfile": "Compact in texture, Edam is mild, nutty, and salty in falvor. Pale yellow in color.", "image": "./images/edam.jpg"
+    },{
+      "name": "Feta", "type": "Soft", "flavorProfile": "Feta is a full-flavored, salty, tangy, and nutty in flavor and creamy, crumbly, grainy and open in texture.", "image": "./images/feta.jpg"
+    }
+  ]
+}

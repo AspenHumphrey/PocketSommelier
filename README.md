@@ -22,7 +22,7 @@
 1. Run npm install body-parser
 
 ## PostgreSQL
-1. Run npm install -g sequelize-cli
+1. Run npm install pg
 
 ## Sequelize
 1. Run npm install sequelize
