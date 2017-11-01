@@ -1,16 +1,13 @@
-# PocketSommelier
+## PocketSommelier
 
 ## Technologies:
 
-### Server-Side: 
-## NodeJS, NodeMon, PostgreSQL, Express, Body-Parser, Sequelize
+## Server-Side:  NodeJS, NodeMon, PostgreSQL, Express, Body-Parser, Sequelize
 
-### Front-End: 
-## AngularJS, Bootstrap, CSS
+## Front-End: AngularJS, Bootstrap, CSS
 
-### Authentication:
-## Token-Based Authentication
-# Helpful Links for Token-Based Authentication: 
+### Authentication: Token-Based Authentication
+## Helpful Links for Token-Based Authentication: 
 1. Jufe Brown GitHub: https://github.com/Jufebrown/sequelize-token-auth
 2. NodeJS tutorial: http://mherman.org/blog/2016/10/28/token-based-authentication-with-node/#.WfnXFHVSz4g
 3. AngularJS tutorial: http://mherman.org/blog/2017/01/05/token-based-authentication-with-angular/#.Wfnc-XVSz4i
@@ -41,5 +38,5 @@
 
 ### Front-End Installations:
 ## AngularJS
-1. Run: npm install angular
+1. Run npm install angular
 2. Add this script to your index.html: <script src="/node_modules/angular/angular.js"></script>
