@@ -6,10 +6,10 @@
 
 ## Front-End: AngularJS, Bootstrap, CSS
 
-## Useful sites for this app:
-http://faberpartner.de/index.php/uebersicht.html
-http://winefolly.com
-http://cheese.com 
+## Helpful sites to make this app:
+1. http://faberpartner.de/index.php/uebersicht.html
+2. http://winefolly.com
+3. http://cheese.com 
 
 ## Authentication: Token-Based Authentication
 ### Helpful Links for Token-Based Authentication: 
