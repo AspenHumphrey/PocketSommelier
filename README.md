@@ -6,6 +6,11 @@
 
 ## Front-End: AngularJS, Bootstrap, CSS
 
+## Useful sites for this app:
+http://faberpartner.de/index.php/uebersicht.html
+http://winefolly.com
+http://cheese.com 
+
 ## Authentication: Token-Based Authentication
 ### Helpful Links for Token-Based Authentication: 
 1. Jufe Brown GitHub: https://github.com/Jufebrown/sequelize-token-auth
@@ -46,5 +51,5 @@
 <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
 
 ## Angular Route
-1. Run npm install --save angular-route@X.Y.Z
+1. Run npm install --save angular-route
 2. Add this script to your index.html: "//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"
