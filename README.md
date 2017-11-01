@@ -12,7 +12,7 @@
 2. NodeJS tutorial: http://mherman.org/blog/2016/10/28/token-based-authentication-with-node/#.WfnXFHVSz4g
 3. AngularJS tutorial: http://mherman.org/blog/2017/01/05/token-based-authentication-with-angular/#.Wfnc-XVSz4i
 
-## Server-Side Installations:
+# Server-Side Installations:
 
 ### NPM 
 1. Run npm init -y
@@ -39,7 +39,7 @@
 ## Dot Env
 1. Run npm install dotenv
 
-### Front-End Installations:
+# Front-End Installations:
 ## AngularJS
 1. Run npm install angular
 2. Add these script tags to your index.html: <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
