@@ -1,4 +1,4 @@
-## PocketSommelier
+# PocketSommelier
 
 ## Technologies:
 
@@ -6,8 +6,8 @@
 
 ## Front-End: AngularJS, Bootstrap, CSS
 
-### Authentication: Token-Based Authentication
-## Helpful Links for Token-Based Authentication: 
+## Authentication: Token-Based Authentication
+### Helpful Links for Token-Based Authentication: 
 1. Jufe Brown GitHub: https://github.com/Jufebrown/sequelize-token-auth
 2. NodeJS tutorial: http://mherman.org/blog/2016/10/28/token-based-authentication-with-node/#.WfnXFHVSz4g
 3. AngularJS tutorial: http://mherman.org/blog/2017/01/05/token-based-authentication-with-angular/#.Wfnc-XVSz4i
@@ -35,6 +35,9 @@
 
 ## Sequelize
 1. Run npm install sequelize
+
+## Dot Env
+1. Run npm install dotenv
 
 ### Front-End Installations:
 ## AngularJS
