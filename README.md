@@ -39,6 +39,6 @@
 ### Front-End Installations:
 ## AngularJS
 1. Run npm install angular
-2. Add this script to your index.html: <script src="/node_modules/angular/angular.js"></script>
-3. Add this script to your index.html: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+2. Add these script tags to your index.html: <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
 
