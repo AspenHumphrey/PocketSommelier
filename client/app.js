@@ -12,5 +12,21 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/pairs.html',
     controller: 'PairCtrl'
   })
+  .when('/cheese', {
+    templateUrl: '/client/partials/cheese.html',
+    controller: 'CheeseCtrl'
+  })
+  .when('/cheeseDetails',{
+    templateUrl: '/client/partials/cheeseDetail.html',
+    controller: 'CheeseDetailCtrl'
+  })
+  .when('/wine', {
+    templateUrl: '/client/partials/wine.html',
+    controller: 'WineCtrl'
+  })
+  .when('/wineDetails', {
+    templateUrl: '/client/partials/wineDetail.html',
+    controller: 'WineDetailCtrl'
+  })
   .otherwise('');
 });

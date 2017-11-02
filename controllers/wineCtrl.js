@@ -38,10 +38,11 @@ function getRandomArbitrary() {
 module.exports.getRandomPair = (req, res, next) => {
   const { Wine, Cheese } = req.app.get('models');
   let randomWine = getRandomArbitrary();
-  Wine.findOne({
-    raw: true, where: { id : randomWine }, include: [{ model: Cheese }]
+  Wine.findById(randomWine, {
+    where: { id : randomWine }, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
+    console.log('wine', wine);
     res.status(200).json( wine );
   })
   .catch( ( err ) => {
@@ -53,7 +54,7 @@ module.exports.getRandomPair = (req, res, next) => {
 module.exports.getAllPairs = (req, res, next) => {
   const { Wine, Cheese } = req.app.get('models');
   Wine.findAll({
-    raw: true, include: [{ model: Cheese }]
+    include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
     res.status(200).json( wine );
