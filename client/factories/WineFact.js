@@ -14,13 +14,11 @@ app.factory("WineFact", function($q, $http){
       });
     });
   };
-  return {
-    getAllWines
-  };
+ 
 
   let getWineDetails = () => {
     return $q( ( resolve, reject ) => {
-      $http.get('http://localhost:4000/wine/:id')
+      $http.get('http://localhost:4000/wine/')
       .then( ( wine ) => {
         console.log("one wine", wine.data);
         resolve( wine.data );
@@ -31,8 +29,9 @@ app.factory("WineFact", function($q, $http){
       });
     });
   };
+
   return {
-    getWineDetails
+    getAllWines, getWineDetails
   };
   
 });

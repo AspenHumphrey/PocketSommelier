@@ -11,7 +11,7 @@ app.controller('HomeCtrl', function($scope, HomeFact){
   HomeFact.getRandomPairData()
   .then( ( randomPair ) => {
     $scope.randomPair = randomPair
-    console.log($scope.randomPair.name);
+    // console.log($scope.randomPair.name);
     $scope.randomCheese = getRandomCheese();
     // console.log("random??", $scope.randomCheese);
   });

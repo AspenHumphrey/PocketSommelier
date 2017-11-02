@@ -42,7 +42,6 @@ module.exports.getRandomPair = (req, res, next) => {
     where: { id : randomWine }, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
-    console.log('wine', wine);
     res.status(200).json( wine );
   })
   .catch( ( err ) => {

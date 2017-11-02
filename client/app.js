@@ -20,6 +20,10 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/cheeseDetail.html',
     controller: 'CheeseDetailCtrl'
   })
+  .when('/cheesePair/', {
+    templateUrl: '/client/partials/cheesePair.html',
+    controller: 'CheeseCtrl'
+  })
   .when('/wine', {
     templateUrl: '/client/partials/wine.html',
     controller: 'WineCtrl'
