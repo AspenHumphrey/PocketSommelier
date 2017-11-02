@@ -4,7 +4,7 @@
 
 ## Server-Side:  NodeJS, NodeMon, PostgreSQL, Express, Body-Parser, Sequelize
 
-## Front-End: AngularJS, Bootstrap, CSS
+## Front-End: AngularJS, Bootstrap, CSS, Firebase
 
 ## Helpful sites to make this app:
 1. http://faberpartner.de/index.php/uebersicht.html
@@ -53,3 +53,6 @@
 ## Angular Route
 1. Run npm install --save angular-route
 2. Add this script to your index.html: "//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"
+
+## FireBase
+1. Go To: https://firebase.google.com/
