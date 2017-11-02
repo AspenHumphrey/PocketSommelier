@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     type: DataTypes.STRING,
     flavorProfile: DataTypes.TEXT,
-    image: DataTypes.STRING
+    image: DataTypes.TEXT
   }, { timestamps: false } );
 
   Wine.associate = (models) => {

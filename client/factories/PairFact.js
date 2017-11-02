@@ -1,12 +1,12 @@
 'use strict';
 
 app.factory("PairFact", function($q, $http){
-  let getAllPairs = () => {
+  let getAllPairsArr = () => {
     return $q( ( resolve, reject ) => {
       $http.get('http://localhost:4000/pair/all')
-      .then( ( pairData ) => {
-        console.log("parData", pairData);
-        resolve( pairData.data );
+      .then( ( pairArr ) => {
+        console.log("pair Arr", pairArr);
+        resolve( pairArr.data );
       })
       .catch( ( err ) => {
         console.log("oops", err);
@@ -15,6 +15,6 @@ app.factory("PairFact", function($q, $http){
     });
   };
   return {
-    getAllPairs
+    getAllPairsArr
   };
 });
