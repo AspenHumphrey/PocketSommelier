@@ -1,4 +1,4 @@
-  // Initialize Firebase
+//   Initialize Firebase
 // app.constant('FBCreds', {
 //     apiKey: "AIzaSyD_Bva-4ZIpXRAvCdE2Z2MVSKrJo0iXPOY",
 //     authDomain: "pocket-sommelier-3185d.firebaseapp.com",

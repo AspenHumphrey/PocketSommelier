@@ -1,53 +1,53 @@
 { "cheeses": 
   [
     {
-      "name": "Brie", "type": "Soft", "flavorProfile": "Brie is milder. It has a creamy, buttery texture, with a fruity, mild, nutty taste. It light cream in color", "image": "gs://pocket-sommelier-3185d.appspot.com/brie.jpg"
+      "name": "Brie", "type": "Soft", "flavorProfile": "Brie is milder. It has a creamy, buttery texture, with a fruity, mild, nutty taste. It light cream in color", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/brie.jpg?alt=media&token=c3093b04-e26f-4b08-9b51-552ab3e10f25"
     },{
-      "name": "Camembert", "type": "Soft", "flavorProfile": "Camembert has a deeper, more earthy and intense flavor and aroma. It has a supple, soft, smooth texture with buttery, creamy, milky-sweet flavors. It is a pale yellow color.", "image": "gs://pocket-sommelier-3185d.appspot.com/camembert.jpg"
+      "name": "Camembert", "type": "Soft", "flavorProfile": "Camembert has a deeper, more earthy and intense flavor and aroma. It has a supple, soft, smooth texture with buttery, creamy, milky-sweet flavors. It is a pale yellow color.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/camembert.jpg?alt=media&token=3d3d6cfb-bb27-4006-bb94-58e0331faec9"
     },{
-      "name": "Goat Cheese", "type": "Semi-Soft", "flavorProfile": "Goat Cheese is often described as having a tart, earthy flavor. It is white in color and has a creamy, crumbly, and firm texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/goatcheese.jpg"
+      "name": "Goat Cheese", "type": "Semi-Soft", "flavorProfile": "Goat Cheese is often described as having a tart, earthy flavor. It is white in color and has a creamy, crumbly, and firm texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/goatcheese.jpg?alt=media&token=a3d3c5a8-5ea8-4f6d-949a-9fa6990e0367"
     },{
-      "name": "Blue", "type": "Semi-Soft", "flavorProfile": "Best described as sharp, tangy, and salty in flavor and creamy in texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/blue.jpg"
+      "name": "Blue", "type": "Semi-Soft", "flavorProfile": "Best described as sharp, tangy, and salty in flavor and creamy in texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/blue.jpg?alt=media&token=b57094be-c35e-4b62-8b00-d750a4c9c5c1"
     },{
-      "name": "Cheddar", "type": "Hard", "flavorProfile": "Creamy and sharp, also one of the most easily digested cheeses. It is compact and crumbly in texture and pale yellow in color", "image": "gs://pocket-sommelier-3185d.appspot.com/cheddar.jpg"
+      "name": "Cheddar", "type": "Hard", "flavorProfile": "Creamy and sharp, also one of the most easily digested cheeses. It is compact and crumbly in texture and pale yellow in color", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/cheddar.jpg?alt=media&token=cad98ca9-32fb-480d-a828-c6e479000675"
     },{
-      "name": "Fontina", "type": "Semi-Soft", "flavorProfile": "A mild nutty flavor, with a mild hint of honey. Fontina has a dark golden brown rind and a pale yellow interior dotted with tiny holes.", "image": "gs://pocket-sommelier-3185d.appspot.com/fontina.jpg"
+      "name": "Fontina", "type": "Semi-Soft", "flavorProfile": "A mild nutty flavor, with a mild hint of honey. Fontina has a dark golden brown rind and a pale yellow interior dotted with tiny holes.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/fontina.jpg?alt=media&token=f24f81a1-3bd1-41fe-9aa9-1a5c3ca02c2d"
     },{
-      "name": "Gorgonzola", "type": "Soft", "flavorProfile": "Pale yellow color and crumbly and soft in texture with a nutty armoa. It can have a mild to sharp taste depending on its age.", "image": "gs://pocket-sommelier-3185d.appspot.com/gorgonzola.jpg"
+      "name": "Gorgonzola", "type": "Soft", "flavorProfile": "Pale yellow color and crumbly and soft in texture with a nutty armoa. It can have a mild to sharp taste depending on its age.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/gorgonzola.jpg?alt=media&token=e85cee58-6e8c-4e88-9b28-daebd5ac1718"
     },{
-      "name": "Gouda", "type": "Semi-Hard", "flavorProfile": "When a Gouda is aged the cheese changes in flavor and texture- the flavor gets stronger. Aged Gouda is sharp yet sweet at the same time. It has a caramelly, nutty, and buttery taste. Yellow in color.", "image": "gs://pocket-sommelier-3185d.appspot.com/gouda.jpg"
+      "name": "Gouda", "type": "Semi-Hard", "flavorProfile": "When a Gouda is aged the cheese changes in flavor and texture- the flavor gets stronger. Aged Gouda is sharp yet sweet at the same time. It has a caramelly, nutty, and buttery taste. Yellow in color.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/gouda.jpg?alt=media&token=4c53dce6-5c33-43fd-9725-ee3294815981"
     },{
-      "name": "Port Salut", "type": "Semi-Soft", "flavorProfile": "Port Salut is a semi-soft natural cheese that is most recognized by its orange rind. Don't be put off by the smell—which can be strong because it's a washed rind cheese. It will still have a relatively mild flavor—savory and slightly sweet.", "image": "gs://pocket-sommelier-3185d.appspot.com/portsalut.jpg"
+      "name": "Port Salut", "type": "Semi-Soft", "flavorProfile": "Port Salut is a semi-soft natural cheese that is most recognized by its orange rind. Don't be put off by the smell—which can be strong because it's a washed rind cheese. It will still have a relatively mild flavor—savory and slightly sweet.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/portsalut.jpg?alt=media&token=798d9ee2-51cf-4b65-b6ae-8b967668ee7a"
     },{
-      "name": "Swiss", "type": "Hard", "flavorProfile": "The flavor is mild, sweet and nut-like. Swiss cheese is known for being shiny, pale yellow, and having large holes (called eyes) resulting from carbon dioxide released during the maturation process.", "image": "gs://pocket-sommelier-3185d.appspot.com/swiss.jpg"
+      "name": "Swiss", "type": "Hard", "flavorProfile": "The flavor is mild, sweet and nut-like. Swiss cheese is known for being shiny, pale yellow, and having large holes (called eyes) resulting from carbon dioxide released during the maturation process.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/swiss.jpg?alt=media&token=4c8de9a2-fc99-4d1c-95f6-6f5f8f3bd44f"
     },{
-      "name": "Colby", "type": "Semi-Hard", "flavorProfile": "Firm and springy, Colby is a rindless, mild, and sweet, yellow cheese", "image": "gs://pocket-sommelier-3185d.appspot.com/colby.jpg"
+      "name": "Colby", "type": "Semi-Hard", "flavorProfile": "Firm and springy, Colby is a rindless, mild, and sweet, yellow cheese", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/colby.jpg?alt=media&token=dd669414-75de-438d-88c5-2ac396f73312"
     },{
-      "name": "Danish Blue", "type": "Semi-Soft", "flavorProfile": "Sharp and Salty", "image": "gs://pocket-sommelier-3185d.appspot.com/danishblue.jpg"
+      "name": "Danish Blue", "type": "Semi-Soft", "flavorProfile": "Sharp and Salty", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/danishblue.jpg?alt=media&token=37c4540d-6a47-4106-b76e-c016847bceec"
     },{
-      "name": "Parmesan", "type": "Hard", "flavorProfile": "True Parmigiano-Reggiano cheese has a sharp, complex fruity/nutty taste with a strong savory flavor and a slightly gritty texture. Inferior versions can impart a bitter taste.", "image": "gs://pocket-sommelier-3185d.appspot.com/parmesan.jpg"
+      "name": "Parmesan", "type": "Hard", "flavorProfile": "True Parmigiano-Reggiano cheese has a sharp, complex fruity/nutty taste with a strong savory flavor and a slightly gritty texture. Inferior versions can impart a bitter taste.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/parmesan.jpg?alt=media&token=c9f7344f-2d48-4971-922c-bb62d5061330"
     },{
-      "name": "Roquefort", "type": "Semi-Soft", "flavorProfile": "During the curing period, the Roquefort molds develop to create the exquisitely strong, sweet-caramel, yet spicy flavor and aroma of original Roquefort.", "image": "gs://pocket-sommelier-3185d.appspot.com/roquefort2.jpg"
+      "name": "Roquefort", "type": "Semi-Soft", "flavorProfile": "During the curing period, the Roquefort molds develop to create the exquisitely strong, sweet-caramel, yet spicy flavor and aroma of original Roquefort.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/roquefort.jpg?alt=media&token=78ea5527-3151-4bc5-9075-aa4e73242f10"
     },{
-      "name": "Provolone", "type": "Semi-Hard", "flavorProfile": "Provolone cheese is also classified into two forms: Provolone Dolce, which is aged for 2-3 months, has a pale yellow to white colour and sweet taste. The other,Provolone Piccante is aged for more than four months and has a sharper taste.", "image": "gs://pocket-sommelier-3185d.appspot.com/provolone.jpg"
+      "name": "Provolone", "type": "Semi-Hard", "flavorProfile": "Provolone cheese is also classified into two forms: Provolone Dolce, which is aged for 2-3 months, has a pale yellow to white colour and sweet taste. The other,Provolone Piccante is aged for more than four months and has a sharper taste.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/provolone.jpg?alt=media&token=5a772096-94ef-4739-9d4d-63335d13eff4"
     },{
-      "name": "Gruyere", "type": "Hard", "flavorProfile": "Gruyère is sweet but slightly salty, with a flavor that varies widely with age. It is often described as creamy and nutty when young, becoming more assertive, earthy, and complex as it matures. When fully aged (five months to a year) it tends to have small cracks which impart a slightly grainy texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/gruyere.jpg"
+      "name": "Gruyere", "type": "Hard", "flavorProfile": "Gruyère is sweet but slightly salty, with a flavor that varies widely with age. It is often described as creamy and nutty when young, becoming more assertive, earthy, and complex as it matures. When fully aged (five months to a year) it tends to have small cracks which impart a slightly grainy texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/gruyere.jpg?alt=media&token=18ab0eea-617a-4cbc-94b9-b1855858d175"
     },{
-      "name": "Mozzarella", "type": "Semi-Soft", "flavorProfile": "Mozerella is a white cheese with a milky flavor and has a springy, stringy, yet supple texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/mozzarella.jpg"
+      "name": "Mozzarella", "type": "Semi-Soft", "flavorProfile": "Mozerella is a white cheese with a milky flavor and has a springy, stringy, yet supple texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/mozzarella.jpg?alt=media&token=4c8efdd1-a72a-47b4-a63e-27fcc4c47b2f"
     },{
-      "name": "Monterery Jack", "type": "Semi-Hard", "flavorProfile": "It has a compact, creamy, firm, open and supple texture. With a buttery, mild flavor, and a pale yellow color.", "image": "gs://pocket-sommelier-3185d.appspot.com/boursin.jpg"
+      "name": "Monterery Jack", "type": "Semi-Hard", "flavorProfile": "It has a compact, creamy, firm, open and supple texture. With a buttery, mild flavor, and a pale yellow color.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/montereyJack.jpg?alt=media&token=61d00293-5b7d-401a-a30a-83484f60cf7a"
     }, { 
-      "name": "Ricotta", "type": "Soft", "flavorProfile": "Ricotta is a sweet white cheese with a fresh aroma. It has a creamy and fluffy texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/ricotta.jpg"
+      "name": "Ricotta", "type": "Soft", "flavorProfile": "Ricotta is a sweet white cheese with a fresh aroma. It has a creamy and fluffy texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/ricotta.jpg?alt=media&token=21152cac-e1c2-43b6-bc7e-96250e0adaa2"
     }, {
-      "name": "Chevre", "type": "Soft", "flavorProfile": "Firm yet soft in texture, Chevre is white in color and has an earthy, tangy, and tart taste.", "image": "gs://pocket-sommelier-3185d.appspot.com/chervre.jpg"
+      "name": "Chevre", "type": "Soft", "flavorProfile": "Firm yet soft in texture, Chevre is white in color and has an earthy, tangy, and tart taste.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/chervre.jpg?alt=media&token=27b19526-eb00-4bd9-a2b4-a861b8134760"
     },{
-      "name": "Muenster", "type": "Soft", "flavorProfile": "ELastic, smooth, and supple in texture with a pale yellow color. It has a mild, savory, and sharp taste.", "image": "gs://pocket-sommelier-3185d.appspot.com/muenster.jpg"
+      "name": "Muenster", "type": "Soft", "flavorProfile": "ELastic, smooth, and supple in texture with a pale yellow color. It has a mild, savory, and sharp taste.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/muenster.jpg?alt=media&token=1228d070-1571-410a-8384-31713fdc1cd9"
     },{
-      "name": "Asiago", "type": "Hard", "flavorProfile": "Asiago is compact, crumbly, open, and smooth in texture and yellow in color. It is full-flavored and pungent- mild, milky, and sharp in taste.", "image": "gs://pocket-sommelier-3185d.appspot.com/asiago.jpg"
+      "name": "Asiago", "type": "Hard", "flavorProfile": "Asiago is compact, crumbly, open, and smooth in texture and yellow in color. It is full-flavored and pungent- mild, milky, and sharp in taste.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/asiago.jpg?alt=media&token=7f05049e-1059-411b-87e5-09e4f9c7ba5b"
     },{
-      "name": "Edam", "type": "Semi-Hard", "flavorProfile": "Compact in texture, Edam is mild, nutty, and salty in falvor. Pale yellow in color.", "image": "gs://pocket-sommelier-3185d.appspot.com/edam.jpg"
+      "name": "Edam", "type": "Semi-Hard", "flavorProfile": "Compact in texture, Edam is mild, nutty, and salty in falvor. Pale yellow in color.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/edam.jpg?alt=media&token=d8c2cff0-0b51-47bb-8469-a0f9a4021c51"
     },{
-      "name": "Feta", "type": "Soft", "flavorProfile": "Feta is a full-flavored, salty, tangy, and nutty in flavor and creamy, crumbly, grainy and open in texture.", "image": "gs://pocket-sommelier-3185d.appspot.com/feta.jpg"
+      "name": "Feta", "type": "Soft", "flavorProfile": "Feta is a full-flavored, salty, tangy, and nutty in flavor and creamy, crumbly, grainy and open in texture.", "image": "https://firebasestorage.googleapis.com/v0/b/pocket-sommelier-3185d.appspot.com/o/feta.jpg?alt=media&token=7bf8192c-b27d-4305-b4ea-155120040d0f"
     }
   ]
 }
