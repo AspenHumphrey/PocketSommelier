@@ -5,11 +5,10 @@ module.exports.getAllCheese = (req, res, next) => {
   const { Cheese } = req.app.get('models');
   Cheese.findAll()
   .then( ( cheeses ) => {
-    res.send(JSON.stringify( cheeses ));
-    // res.render('cheeses', { cheeses });
+    res.status(200).json( cheeses );
   })
   .catch( ( err ) => {
-    next( err );
+     next( err );
   });
 };
 
@@ -20,14 +19,15 @@ module.exports.getOneCheeseAllWines = (req, res, next) => {
     Cheese.findById(req.params.id, {
       include: [{ model: Wine }]
     })
-      .then( ( cheese ) => {
-        res.send(JSON.stringify( cheese ));
-        // res.render('product', { product });
-      })
+    .then( ( cheese ) => {
+      res.status(200).json( cheese );
+    })
     .catch( ( err ) => {
-      next( err );
+       next( err );
     });
   };
+
+
 
   // gets cheese on key word search
 // module.exports.getSearchCheese = (req, res, next) => {
@@ -37,8 +37,7 @@ module.exports.getOneCheeseAllWines = (req, res, next) => {
 //   const { Cheese, Wine } = req.app.get('models');
 //   Cheese.findOne( { raw: true, where: { name: search }, include: [{ model: Wine }] })
 //   .then( ( cheese ) => {
-//     res.send(JSON.stringify( cheese ));
-//     // res.render('cheese', { cheese });
+//     res.status(200).json( cheese );
 //   })
 //   .catch( ( err ) => {
 //     next( err );

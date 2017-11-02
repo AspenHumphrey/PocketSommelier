@@ -5,11 +5,10 @@ module.exports.getAllWine = (req, res, next) => {
   const { Wine } = req.app.get('models');
   Wine.findAll()
   .then( ( wines ) => {
-    res.send(JSON.stringify( wines ));
-    // res.render('wines', { wines });
+    res.status(200).json( wines );
   })
   .catch( ( err ) => {
-    next( err );
+     next( err );
   });
 };
 
@@ -19,12 +18,11 @@ module.exports.getOneWineAllCheeses = (req, res, next) => {
     Wine.findById(req.params.id, {
       include: [{ model: Cheese }]
     })
-      .then( ( wine ) => {
-        res.send(JSON.stringify( wine ));
-        // res.render('product', { product });
-      })
+    .then( ( wine ) => {
+      res.status(200).json( wine );
+    })
     .catch( ( err ) => {
-      next( err );
+       next( err );
     });
   };
 
@@ -44,11 +42,10 @@ module.exports.getRandomPair = (req, res, next) => {
     raw: true, where: { id : randomWine }, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
-    res.send(JSON.stringify( wine ));
-    // res.render('product', { product });
+    res.status(200).json( wine );
   })
-  .catch( ( err) => {
-    next( err );
+  .catch( ( err ) => {
+     next( err );
   });
 };
 
@@ -59,10 +56,12 @@ module.exports.getAllPairs = (req, res, next) => {
     raw: true, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
-    res.send(JSON.stringify( wine ));
-    // res.render('product', { product });
+    res.status(200).json( wine );
   })
-}
+  .catch( ( err ) => {
+     next( err );
+  });
+};
 
 
 
@@ -74,10 +73,9 @@ module.exports.getAllPairs = (req, res, next) => {
 //   const { Wine, Cheese } = req.app.get('models');
 //   Wine.findOne( { raw: true, where: { name: search }, include: [{ model: cheese }] })
 //   .then( ( wine ) => {
-//     res.send(JSON.stringify( wine ));
-//     // res.render('wine', { wine });
+//     res.status(200).json( wine );
 //   })
 //   .catch( ( err ) => {
-//     next( err );
+//      next( err );
 //   });
 // };
