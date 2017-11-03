@@ -11,5 +11,4 @@ app.controller('CheesePairCtrl', function($scope, $routeParams, CheeseFact){
       console.log("whoope", err);
     });
 
-
 });
