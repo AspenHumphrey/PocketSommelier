@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar navbar-default navbar-inverse" ng-controller="NavCtrl">
   <div class="container-fluid">
     <div class="navbar-header">
       <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -16,13 +16,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <!-- the below is placeholder for login -->
-        <!-- <li ><a ng-href="#!/login">Login</a></li> -->
+        <li ><a ng-href="#!/login">Login</a></li>
+        <li ><a ng-href="#!/register">Register</a></li>
         <li> <a ng-href="#!/introduction">introduction</a></li>        
         <li ><a ng-href="#!/pairs" >Pairs</a></li>
         <li ><a ng-href="#!/cheese">Cheese</a></li>
         <li ><a ng-href="#!/wine">Wine</a></li>
         <!-- the below is placeholder for logout -->
-        <!-- <li ng-show="isLoggedIn"><a ng-href="#!/logout" ng-click="logout()">Logout</a></li> -->
+        <li ng-show="isLoggedIn"><a ng-href="#!/logout" ng-click="logout()">Logout</a></li>
         <!-- the below is placeholder for favorites -->
         <!-- <li ng-show="isLoggedIn"><a ng-href="#!/logout" ng-click="logout()">Logout</a></li> -->
       </ul>

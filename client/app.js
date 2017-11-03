@@ -8,6 +8,14 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/home.html',
     controller: 'HomeCtrl'
   })
+  .when('/login', {
+    templateUrl: '/client/partials/login.html',
+    controller: 'LoginCtrl'
+  })
+  .when('/register', {
+    templateUrl: '/client/partials/register.html',
+    controller: 'RegisterCtrl'
+  })
   .when('/introduction', {
     templateUrl: '/client/partials/introduction.html'
   })
