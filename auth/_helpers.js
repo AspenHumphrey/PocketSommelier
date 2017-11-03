@@ -4,6 +4,7 @@ const localAuth = require('./local.js');
 
 
 function createUser(req) {
+  console.log("password",req.body.password)
   const salt = bcrypt.genSaltSync();
   const hash = bcrypt.hashSync(req.body.password, salt);
   return User

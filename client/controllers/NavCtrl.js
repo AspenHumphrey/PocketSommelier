@@ -7,7 +7,7 @@ app.controller('NavCtrl', function($scope, $location, AuthFact) {
     localStorage.setItem('isLoggedIn', false);
     const token = localStorage.token;
     if(token){
-      authFactory.ensureAuthenticated(token)
+      AuthFact.ensureAuthenticated(token)
         .then((user) => {
           if (user.data.status === 'success')
             $scope.isLoggedIn = true;
@@ -21,7 +21,7 @@ app.controller('NavCtrl', function($scope, $location, AuthFact) {
   };
 
   $scope.logout = () => {
-    authFactory.logout();
+    AuthFact.logout();
     $location.url('/');
   };
 

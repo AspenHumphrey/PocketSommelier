@@ -4,6 +4,7 @@ const authHelpers = require('../auth/_helpers');
 
 
 module.exports.registerUser = (req, res, next) => {
+  console.log("registered?");
   return authHelpers.createUser(req)
     .then((user) => { return localAuth.encodeToken(user); })
     .then((token) => {
