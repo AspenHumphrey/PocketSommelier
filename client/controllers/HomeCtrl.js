@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('HomeCtrl', function($scope, HomeFact){
+app.controller('HomeCtrl', function($scope, $window, HomeFact){
 
   function getRandomCheese(){
     let cheeseLength = $scope.randomPair.Cheeses.length;
@@ -15,6 +15,11 @@ app.controller('HomeCtrl', function($scope, HomeFact){
     $scope.randomCheese = getRandomCheese();
     // console.log("random??", $scope.randomCheese);
   });
+
+
+  $scope.getPairDetails = (id) => {
+    $window.location.href = `#!/pairDetails/${id}`;
+  };
 
 
 });

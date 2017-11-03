@@ -1,6 +1,7 @@
 'use strict';
 
 app.controller('PairCtrl', function($scope, PairFact){
+
   PairFact.getAllPairsArr()
   .then( ( pairsArrData ) => {
     $scope.pairsArr = [];
@@ -13,6 +14,7 @@ app.controller('PairCtrl', function($scope, PairFact){
   .catch( ( err ) => {
     console.log("whoope", err);
   });
+  
 });
 
 // loop through array and/or do a for each on obj on array to 

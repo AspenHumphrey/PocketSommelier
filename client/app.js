@@ -12,6 +12,10 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/pairs.html',
     controller: 'PairCtrl'
   })
+  .when('/pairDetails/:id', {
+    templateUrl: '/client/partials/pairDetails.html',
+    controller: 'PairCtrl'
+  })
   .when('/cheese', {
     templateUrl: '/client/partials/cheese.html',
     controller: 'CheeseCtrl'
@@ -23,6 +27,10 @@ app.config( ($routeProvider) => {
   .when('/wine', {
     templateUrl: '/client/partials/wine.html',
     controller: 'WineCtrl'
+  })
+  .when('/winePair/:id', {
+    templateUrl: '/client/partials/winePair.html',
+    controller: 'WinePairCtrl'
   })
   .otherwise('');
 });
