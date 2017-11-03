@@ -17,8 +17,8 @@ app.controller('HomeCtrl', function($scope, $window, HomeFact){
   });
 
 
-  $scope.getPairDetails = (id) => {
-    $window.location.href = `#!/pairDetails/${id}`;
+  $scope.getRandomPairDetails = (id) => {
+    $window.location.href = `#!/singlePair/${id}`;
   };
 
 

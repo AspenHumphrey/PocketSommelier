@@ -8,13 +8,16 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/home.html',
     controller: 'HomeCtrl'
   })
+  .when('/introduction', {
+    templateUrl: '/client/partials/introduction.html'
+  })
   .when('/pairs', {
     templateUrl: '/client/partials/pairs.html',
     controller: 'PairCtrl'
   })
-  .when('/pairDetails/:id', {
+  .when('/singlePair/:id', {
     templateUrl: '/client/partials/pairDetails.html',
-    controller: 'PairCtrl'
+    controller: 'PairDetailCtrl'
   })
   .when('/cheese', {
     templateUrl: '/client/partials/cheese.html',
