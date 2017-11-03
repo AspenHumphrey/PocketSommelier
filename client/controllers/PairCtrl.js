@@ -2,6 +2,8 @@
 
 app.controller('PairCtrl', function($scope, PairFact){
 
+  $scope.isLoggedIn = localStorage.isLoggedIn;
+
   PairFact.getAllPairsArr()
   .then( ( pairsArrData ) => {
     $scope.pairsArr = [];

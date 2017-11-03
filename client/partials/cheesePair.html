@@ -14,7 +14,7 @@
     <h3>{{wine.flavorProfile}}</h3>
     <img ng-src="{{wine.image}}">
     <!-- the button below needs to save pair to favorites -->
-    <button>Save Pair</button>
+    <button ng-show="isLoggedIn" ng-click="savePair()">Save Pair</button>
   </div>
 
 </div>

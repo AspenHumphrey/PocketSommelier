@@ -1,14 +1,17 @@
 'use strict';
 
-app.controller('PairDetailCtrl', function($scope, $routeParams, PairFact){
+app.controller('PairDetailCtrl', function($scope, PairFact){
+
+  // console.log('local storage?', localStorage.currentRandomPair);
+
+  let pairObject = JSON.parse(localStorage.getItem('currentRandomPair'));
+  console.log('whatttt', pairObject);
+
+  $scope.singlePair = pairObject.pair;
+  $scope.singleCheese = pairObject.cheese;
   
-    PairFact.getAllPairsArr($routeParams.id)
-    .then( ( singlePair ) => {
-      $scope.singePair = singlePair
-      // $scope.singlePair.id
-    })
-    .catch( ( err ) => {
-      console.log("whoope", err);
-    });
+  console.log("is this what i want?", $scope.singleCheese, $scope.singlePair);
+
+
 
 });

@@ -1,6 +1,8 @@
 'use strict';
 
 app.controller('CheesePairCtrl', function($scope, $routeParams, CheeseFact){
+
+  $scope.isLoggedIn = localStorage.getItem("isLoggedIn");
   
     CheeseFact.getOneCheeseAllWines($routeParams.id)
     .then( ( cheesePair ) => {
@@ -10,5 +12,7 @@ app.controller('CheesePairCtrl', function($scope, $routeParams, CheeseFact){
     .catch( ( err ) => {
       console.log("whoope", err);
     });
+
+  
 
 });

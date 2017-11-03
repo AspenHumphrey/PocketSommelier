@@ -15,6 +15,8 @@ app.factory("PairFact", function($q, $http){
     });
   };
 
+  
+
 
   return {
     getAllPairsArr

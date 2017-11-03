@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('HomeCtrl', function($scope, $window, HomeFact){
+app.controller('HomeCtrl', function($scope, $location, HomeFact){
 
   function getRandomCheese(){
     let cheeseLength = $scope.randomPair.Cheeses.length;
@@ -8,17 +8,21 @@ app.controller('HomeCtrl', function($scope, $window, HomeFact){
     return numberResult;
   }; 
 
-  HomeFact.getRandomPairData()
-  .then( ( randomPair ) => {
-    $scope.randomPair = randomPair
-    // console.log($scope.randomPair.name);
-    $scope.randomCheese = getRandomCheese();
-    // console.log("random??", $scope.randomCheese);
-  });
-
+  $scope.newRandomPair = () => {
+    HomeFact.getRandomPairData()
+    .then( ( randomPair ) => {
+      $scope.randomPair = randomPair
+      console.log($scope.randomPair);
+      $scope.randomCheese = getRandomCheese();
+      let currentPair = { pair: $scope.randomPair, cheese: $scope.randomCheese };
+      localStorage.setItem('currentRandomPair', JSON.stringify(currentPair) );
+      // console.log("random??", $scope.randomCheese);
+    });
+  };
+  $scope.newRandomPair();
 
   $scope.getRandomPairDetails = (id) => {
-    $window.location.href = `#!/singlePair/${id}`;
+    $location.url(`/singlePair`);
   };
 
 

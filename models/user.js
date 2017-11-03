@@ -5,11 +5,11 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING
   });
 
-  // User.associate = (models) => {
-  //   User.belongsToMany(models.Favorites, {
-  //     through: 'UserFavorites'
-  //   });
-  // }
+  User.associate = (models) => {
+    User.belongsToMany(models.WineCheese, {
+      through: 'UserFavorites'
+    });
+  };
 
   return User;
 };

@@ -23,7 +23,7 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/pairs.html',
     controller: 'PairCtrl'
   })
-  .when('/singlePair/:id', {
+  .when('/singlePair', {
     templateUrl: '/client/partials/pairDetails.html',
     controller: 'PairDetailCtrl'
   })
