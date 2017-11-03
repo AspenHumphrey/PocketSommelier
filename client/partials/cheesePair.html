@@ -12,10 +12,19 @@
       </div>
     </div> -->
 
-  <!-- <h3>{{data.data.name}}</h3>
-  <h3>{{data.data.type}}</h3>
-  <h3>{{data.data.flavorProfile}}</h3>
-  <img ng-src="{{data.data.image}}"> -->
+  <h3>{{cheesePair.data.name}}</h3>
+  <h3>{{cheesePair.data.type}}</h3>
+  <h3>{{cheesePair.data.flavorProfile}}</h3>
+  <img ng-src="{{cheesePair.data.image}}">
+
+  <div ng-repeat="wine in cheesePair.data.Wines">
+    <h3>{{wine.name}}</h3>
+    <h3>{{wine.type}}</h3>
+    <h3>{{wine.flavorProfile}}</h3>
+    <img ng-src="{{wine.image}}">
+    <!-- the button below needs to save pair to favorites -->
+    <button>Save Pair</button>
+  </div>
 
   <!-- on cheese pair i cannot get  -->
   <!-- at lunch i am stopping angularJS and moving onto token based auth & *hopefully* starting my 

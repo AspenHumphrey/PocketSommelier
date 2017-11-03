@@ -17,8 +17,12 @@ app.controller('CheeseCtrl', function($scope, $window, CheeseFact){
 
 
   $scope.getCheesePair = (id) => {
-      $window.location.href = `#!/cheesePair/${id}`;
+    $window.location.href = `#!/cheesePair/${id}`;
   };
+
+  $scope.getAllCheeses = (id) => {
+    $window.location.href = `#!/cheeseDetail/${id}`
+  }
  
 
   

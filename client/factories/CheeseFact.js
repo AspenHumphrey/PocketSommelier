@@ -17,18 +17,18 @@ app.factory("CheeseFact", function($q, $http){
   };
 
 // gets the details of one cheese
-  let getCheeseDetails = () => {
-    return $q( ( resolve, reject ) => {
-      $http.get('http://localhost:4000/cheese/')
-      .then( ( cheese ) => {
-        resolve( cheese.data );
-      })
-      .catch( ( err ) => {
-        console.log("whoops", err);
-        reject( err );
-      });
-    });
-  };
+  // let getCheeseDetails = () => {
+  //   return $q( ( resolve, reject ) => {
+  //     $http.get(`http://localhost:4000/cheese/${id}`)
+  //     .then( ( cheese ) => {
+  //       resolve( cheese.data );
+  //     })
+  //     .catch( ( err ) => {
+  //       console.log("whoops", err);
+  //       reject( err );
+  //     });
+  //   });
+  // };
 
   // route is fucked up-- i already have a cheese/:id related route ... that gets all cheeses
   // the route that this calls in node is cheese/:id help
@@ -47,7 +47,7 @@ app.factory("CheeseFact", function($q, $http){
   };
 
   return {
-    getAllCheeses, getCheeseDetails, getOneCheeseAllWines 
+    getAllCheeses, getOneCheeseAllWines 
   };
 
 
