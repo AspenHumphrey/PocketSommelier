@@ -28,19 +28,3 @@ module.exports.getOneCheeseAllWines = (req, res, next) => {
   };
 
 
-
-  // gets cheese on key word search
-module.exports.getSearchCheese = (req, res, next) => {
-  let search = req.body.search;
-  // found a nifty little widget from stack overflow
-  search = search.charAt(0).toUpperCase() + search.slice(1);
-  const { Cheese, Wine } = req.app.get('models');
-  Cheese.findOne( { raw: true, where: { name: search }, include: [{ model: Wine }] })
-  .then( ( cheese ) => {
-    res.status(200).json( cheese );
-  })
-  .catch( ( err ) => {
-    next( err );
-  });
-};
-

@@ -35,9 +35,9 @@ app.factory("CheeseFact", function($q, $http){
   // route is fucked up-- i already have a cheese/:id related route ... that gets all cheeses
   // the route that this calls in node is cheese/:id help
   // pass id as var to correct route. on click
-  let getOneCheeseAllWines = () => {
+  let getOneCheeseAllWines = (id) => {
     return $q( ( resolve, reject ) => {
-      $http.get('http://localhost:4000/cheese/')
+      $http.get(`http://localhost:4000/cheese/${id}`)
       .then( ( cheese ) => {
         console.log("cheese and wine?", cheese);
         resolve( cheese.data );
@@ -50,23 +50,23 @@ app.factory("CheeseFact", function($q, $http){
 
   // needs own controller??? also needs a unique route
 // gets one cheese and all associated wine(s)
-  let getCheeseSearch = () => {
-    return $q( ( resolve, reject ) => {
-      $http.get('http://localhost:4000/cheese')
-      .then( ( cheese ) => {
-        console.log("cheese search", cheese.data);
-        resolve( cheese.data );
-      })
-      .catch( ( err ) => {
-        console.log("whoops", err);
-        reject( err );
-      });
-    });
-  };
+  // let getCheeseSearch = () => {
+  //   return $q( ( resolve, reject ) => {
+  //     $http.get('http://localhost:4000/cheese')
+  //     .then( ( cheese ) => {
+  //       console.log("cheese search", cheese.data);
+  //       resolve( cheese.data );
+  //     })
+  //     .catch( ( err ) => {
+  //       console.log("whoops", err);
+  //       reject( err );
+  //     });
+  //   });
+  // };
 // getCheeseSearch
 
   return {
-    getAllCheeses, getCheeseDetails, getOneCheeseAllWines, getCheeseSearch 
+    getAllCheeses, getCheeseDetails, getOneCheeseAllWines 
   };
 
 

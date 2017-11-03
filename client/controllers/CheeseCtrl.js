@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('CheeseCtrl', function($scope, CheeseFact){
+app.controller('CheeseCtrl', function($scope, $window, CheeseFact){
 
   $scope.search = "";
   $scope.item = 0;
@@ -18,17 +18,9 @@ app.controller('CheeseCtrl', function($scope, CheeseFact){
     console.log("whoope", err);
   });
 
-  function getCheesePair(id) {
-    console.log("after 21");
-    CheeseFact.getOneCheeseAllWines()
-    .then( ( cheesePair ) => {
-      $scope.cheesePair = cheesePair
-      $scope.cheesePair.id
-      // $window.location.href = `#!/cheesePair/${$scope.cheesePair.id}`;
-    })
-    .catch( ( err ) => {
-      console.log("whoope", err);
-    });
+
+  $scope.getCheesePair = (id) => {
+      $window.location.href = `#!/cheesePair/${id}`;
   };
  
   
