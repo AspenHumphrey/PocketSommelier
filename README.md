@@ -13,7 +13,8 @@
 
 ## Authentication: Token-Based Authentication
 ### Helpful Links for Token-Based Authentication: 
-1. Jufe Brown GitHub: https://github.com/Jufebrown/sequelize-token-auth
+1. Jufe Brown GitHub Angular Auth: https://github.com/Jufebrown/sequelize-token-auth
+2. Jufe Brown GitHub NodeJS Auth: https://github.com/Jufebrown/angular-token-auth/blob/master/app/app.js
 2. NodeJS tutorial: http://mherman.org/blog/2016/10/28/token-based-authentication-with-node/#.WfnXFHVSz4g
 3. AngularJS tutorial: http://mherman.org/blog/2017/01/05/token-based-authentication-with-angular/#.Wfnc-XVSz4i
 
@@ -43,6 +44,15 @@
 
 ## Dot Env
 1. Run npm install dotenv
+
+## BCRYPTJS
+1. Run npm install bcryptjs
+
+## MomentJS
+1. Run npm install moment
+
+## JWT-simple
+1. Run npm install jwt-simple
 
 # Front-End Installations:
 ## AngularJS
