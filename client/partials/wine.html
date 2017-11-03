@@ -1,15 +1,25 @@
 <div ng-include="'client/partials/nav.html'"></div>
 
 <div>
-  <h1>All the wines</h1>
+  <h1>all wines?</h1>
   
-  <div ng-repeat="wine in wineArr">
-      <div>
-        <h3>{{wine.name}}</h3>
-        <h3>{{wine.type}}</h3>
-        <h3>{{wine.flavorProfile}}</h3>
-        <img ng-src="{{wine.image}}">
-      </div>
+<!-- search button -->
+  <div class="input-group">
+    <span class="input-group-btn"></span>
+    <input type="text" class="form-control input-lg" placeholder="Search for wine..." ng-model="search"/>
+  </div>
+
+<!-- need to put these into cards -->
+  <div ng-repeat="wine in wineArr | filter:search ">
+    <div>
+      <h3>{{wine.name}}</h3>
+      <h3>{{wine.type}}</h3>
+      <h3>{{wine.flavorProfile}}</h3>
+      <img ng-src="{{wine.image}}">
+      <!-- button goes to one cheese with wine pair(s) -->
+      <!-- link to another view only -->
+      <button ng-click="getWinePair(wine.id)">view all pairs</button>
     </div>
+  </div>
 
 </div>

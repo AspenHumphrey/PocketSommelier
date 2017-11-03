@@ -12,7 +12,8 @@ router.get('/wine/:id', getOneWineAllCheeses);
 // random pair is generated
 router.get('/pair', getRandomPair);
 // all pairs are displayed
-router.get('/pair/all', getAllPairs)
+router.get('/pair/all', getAllPairs);
+
 
 
 module.exports = router;

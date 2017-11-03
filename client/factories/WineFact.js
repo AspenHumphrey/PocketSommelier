@@ -14,24 +14,22 @@ app.factory("WineFact", function($q, $http){
       });
     });
   };
- 
 
-  let getWineDetails = () => {
+  let getOneWineAllCheeses = (id) => {
     return $q( ( resolve, reject ) => {
-      $http.get('http://localhost:4000/wine/')
+      $http.get(`http://localhost:4000/wine/${id}`)
       .then( ( wine ) => {
-        console.log("one wine", wine.data);
-        resolve( wine.data );
+        console.log("wine and cheese ?", wine );
+        resolve( wine );
       })
       .catch( ( err ) => {
-        console.log("whoops", err);
         reject( err );
       });
     });
   };
-
+ 
   return {
-    getAllWines, getWineDetails
+    getAllWines, getOneWineAllCheeses
   };
   
 });

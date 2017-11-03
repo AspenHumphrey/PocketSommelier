@@ -3,25 +3,21 @@
 <div>
   <h1>all cheeses?</h1>
   
-
+<!-- search button -->
   <div class="input-group">
-      <span class="input-group-btn"></span>
-      <!-- <h2>Search Cheeses</h2> -->
-      <input type="text" class="form-control input-lg" placeholder="Search for cheese..." ng-model="search"/><button class="btn btn-default btn-lg" ng-click="cheeseSearch()"><i class="fa fa-search" aria-hidden="true"></i><br></button>
-    </div>
+    <span class="input-group-btn"></span>
+    <input type="text" class="form-control input-lg" placeholder="Search for cheese..." ng-model="search"/>
+  </div>
 
 <!-- need to put these into cards -->
-  <div ng-repeat="cheese in cheeseArr">
+  <div ng-repeat="cheese in cheeseArr | filter:search ">
     <div>
       <h3>{{cheese.name}}</h3>
       <h3>{{cheese.type}}</h3>
       <h3>{{cheese.flavorProfile}}</h3>
       <img ng-src="{{cheese.image}}">
-      <!-- button goes to cheese detail -->
-      <!-- <button class="btn btn-default btn-lg" ng-href="#!/cheesePair" ng-click="getAllCheeses()"></button> -->
       <!-- button goes to one cheese with wine pair(s) -->
       <!-- link to another view only -->
-      
       <button ng-click="getCheesePair(cheese.id)">view all pairs</button>
     </div>
   </div>

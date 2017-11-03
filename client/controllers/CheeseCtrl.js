@@ -2,17 +2,14 @@
 
 app.controller('CheeseCtrl', function($scope, $window, CheeseFact){
 
-  $scope.search = "";
-  $scope.item = 0;
   
   CheeseFact.getAllCheeses()
   .then( ( cheeses ) => {
     $scope.cheeseArr = [];
     $scope.cheeses = cheeses
-    angular.forEach($scope.cheeses, function(cheese){
-      $scope.cheeseArr.push(cheese);
+    angular.forEach($scope.cheeses, function( cheese ){
+      $scope.cheeseArr.push( cheese );
     });
-    console.log("$scope.cheeseArr", $scope.cheeseArr);
   })
   .catch( ( err ) => {
     console.log("whoope", err);
@@ -20,16 +17,14 @@ app.controller('CheeseCtrl', function($scope, $window, CheeseFact){
 
 
   $scope.getCheesePair = (id) => {
-      $window.location.href = `#!/cheesePair/${id}`;
+    $window.location.href = `#!/cheesePair/${id}`;
   };
+
+  $scope.getAllCheeses = (id) => {
+    $window.location.href = `#!/cheeseDetail/${id}`
+  }
  
-  
 
-
-
-$scope.cheeseSearch = () => {
-  CheeseFact.getCheeseSearch($scope.search)
-};  
   
 });
 
