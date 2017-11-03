@@ -2,8 +2,16 @@
 
 app.controller('PairCtrl', function($scope, PairFact){
   PairFact.getAllPairsArr()
-  .then( ( pairsArr ) => {
-    $scope.pairsArr = pairsArr
+  .then( ( pairsArrData ) => {
+    $scope.pairsArr = [];
+    $scope.pairsArrData = pairsArrData
+    angular.forEach($scope.pairsArrData, function(pair){
+      $scope.pairsArr.push(pair);
+    });
+    console.log("$scope.pairsArr", $scope.pairsArr);
+  })
+  .catch( ( err ) => {
+    console.log("whoope", err);
   });
 });
 

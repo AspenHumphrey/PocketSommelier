@@ -42,7 +42,6 @@ module.exports.getRandomPair = (req, res, next) => {
     where: { id : randomWine }, include: [{ model: Cheese }]
   })
   .then( ( wine ) => {
-    console.log('wine', wine);
     res.status(200).json( wine );
   })
   .catch( ( err ) => {
@@ -64,19 +63,3 @@ module.exports.getAllPairs = (req, res, next) => {
   });
 };
 
-
-
-// gets one wine on key word search
-// module.exports.getSearcWine = (req, res, next) => {
-//   let search = req.body.search;
-//   // found a nifty little widget from stack overflow
-//   search = search.charAt(0).toUpperCase() + search.slice(1);
-//   const { Wine, Cheese } = req.app.get('models');
-//   Wine.findOne( { raw: true, where: { name: search }, include: [{ model: cheese }] })
-//   .then( ( wine ) => {
-//     res.status(200).json( wine );
-//   })
-//   .catch( ( err ) => {
-//      next( err );
-//   });
-// };
