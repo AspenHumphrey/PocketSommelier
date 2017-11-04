@@ -1,31 +1,22 @@
-<nav class="navbar navbar-default navbar-inverse" ng-controller="NavCtrl">
+<nav class="navbar navbar-inverse navStyle" ng-controller="NavCtrl">
   <div class="container-fluid">
     <div class="navbar-header">
-      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> -->
       <a class="navbar-brand" href="#/">Pocket Sommelier</a>
     </div>
-    
-    
- 
  <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav nav-tabs navbar-right">
         <!-- the below is placeholder for login -->
-        <li ng-hide="isLoggedIn" ><a ng-href="#!/login">Login</a></li>
-        <li ng-hide="isLoggedIn"><a ng-href="#!/register">Register</a></li>
-        <li> <a ng-href="#!/introduction">introduction</a></li>        
-        <li ><a ng-href="#!/pairs" >Pairs</a></li>
-        <li ><a ng-href="#!/cheese">Cheese</a></li>
-        <li ><a ng-href="#!/wine">Wine</a></li>
+        <li ng-hide="isLoggedIn" role="presentation" ><a ng-href="#!/login"> Login</a></li>
+        <li ng-hide="isLoggedIn" role="presentation"><a ng-href="#!/register"> Register</a></li>
+        <li role="presentation"><a ng-href="#!/introduction"> Intro</a></li>        
+        <li role="presentation"><a ng-href="#!/pairs" > Pairs</a></li>
+        <li role="presentation"><a ng-href="#!/cheese"> Cheese</a></li>
+        <li role="presentation"><a ng-href="#!/wine"> Wine</a></li>
         <!-- the below is placeholder for logout -->
-        <li ng-show="isLoggedIn"><a ng-href="#!/" ng-click="logout()">Logout</a></li>
+        <li ng-show="isLoggedIn" role="presentation"><a ng-href="#!/" ng-click="logout()"> Logout</a></li>
         <!-- the below is placeholder for favorites -->
-        <!-- <li ng-show="isLoggedIn"><a ng-href="#!/logout" ng-click="logout()">Logout</a></li> -->
+        <!-- <li ng-show="isLoggedIn" role="presentation"><a ng-href="#!/favorites"> Favorites</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

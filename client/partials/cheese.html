@@ -15,10 +15,9 @@
       <h3>{{cheese.name}}</h3>
       <h3>{{cheese.type}}</h3>
       <h3>{{cheese.flavorProfile}}</h3>
-      <img ng-src="{{cheese.image}}">
-      <!-- button goes to one cheese with wine pair(s) -->
-      <!-- link to another view only -->
-      <button ng-click="getCheesePair(cheese.id)">view all pairs</button>
+      <img ng-src="{{cheese.image}}" class ="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
+    
+      <button class="btn btn-default" ng-click="getCheesePair(cheese.id)">view all pairs</button>
     </div>
   </div>
 

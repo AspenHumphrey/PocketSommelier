@@ -1,0 +1,24 @@
+.navStyle {
+  background-color: goldenrod;
+}
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wineSize {
+  width: 350px;
+  height: 600px
+}
+
+.cheeseSize {
+  width: 500px;
+  height: 500px
+}
+
+/* 
+font-family: 'Oregano', cursive;
+font-family: 'Source Sans Pro', sans-serif; */

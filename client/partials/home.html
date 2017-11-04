@@ -2,20 +2,19 @@
 <div>
   <h1>Pocket Sommelier</h1>
 
-  <div>
+  <div class="center-block">
     <h3>{{randomPair.name}}</h3>
-    <img ng-src="{{randomPair.image}}">
+    <img ng-src="{{randomPair.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
     
     <h3>{{randomCheese.name}}</h3>
-    <img ng-src="{{randomCheese.image}}">
+    <img ng-src="{{randomCheese.image}}" class="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
   </div>
 
-  <!-- need to add a random pair button -->
-  <!-- I want this button to run getRandomPairData on click -->
-  <button ng-click="newRandomPair()">Random Pair</button>
+  <!-- genorates a new random pair run getRandomPairData on click -->
+  <button class="btn btn-default" ng-click="newRandomPair()">Random Pair</button>
 
 
-  <!-- view details on this pair -->
-  <button ng-click="getRandomPairDetails(id)">Pair Details</button>
+  <!-- view details on the random pair shown -->
+  <button class="btn btn-default" ng-click="getRandomPairDetails(id)">Pair Details</button>
 
 </div>
