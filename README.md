@@ -66,3 +66,6 @@
 
 ## Bootstrap v3.3.7
 1. Run npm install bootstrap@3
+
+## jQuery
+1. Run npm install jquery
