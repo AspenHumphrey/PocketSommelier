@@ -1,7 +1,7 @@
 <div ng-include="'client/partials/nav.html'"></div>
 
 <div>
-  <h1>Selected Cheese with related wine(s)</h1>
+  <h1 class="fancyFont">Selected Cheese with related wine(s)</h1>
 
   <h3>{{cheesePair.data.name}}</h3>
   <h3>{{cheesePair.data.type}}</h3>
@@ -14,7 +14,7 @@
     <h3>{{wine.flavorProfile}}</h3>
     <img ng-src="{{wine.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
     <!-- the button below needs to save pair to favorites -->
-    <button class="btn btn-default" ng-show="isLoggedIn" ng-click="savePair()">Save Pair</button>
+    <button class="btn btn-default center-block" ng-show="isLoggedIn" ng-click="savePair()">Save Pair</button>
   </div>
 
 </div>

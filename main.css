@@ -1,7 +1,30 @@
-.navStyle {
-  background-color: goldenrod;
+body {
+  background-color: #f0e5c4;
 }
 
+.navStyle {
+  background-color: #d2b25b;
+}
+
+.navFont {
+  font-family: 'Oregano', cursive;
+  font-size: 30px;
+  color: black;
+}
+
+.fancyFont {
+  font-family: 'Oregano', cursive;
+  font-size: 45px;
+}
+
+h1, h3, h5 {
+  text-align: center;
+}
+
+h3, .font {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+}
 
 .center-block {
   display: block;
@@ -9,16 +32,24 @@
   margin-right: auto;
 }
 
+.homeBtn {
+  padding-top: 10px;
+}
+
+.btnColor {
+  background-color: #c39e3a;
+}  
+
 .wineSize {
-  width: 350px;
+  width: 335px;
   height: 600px
 }
 
 .cheeseSize {
-  width: 500px;
-  height: 500px
+  width: 435px;
+  height: 600px
 }
 
 /* 
 font-family: 'Oregano', cursive;
-font-family: 'Source Sans Pro', sans-serif; */
+font-family: */

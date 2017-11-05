@@ -1,23 +1,22 @@
 <div ng-include="'client/partials/nav.html'"></div>
 
 <div>
-  <h1>all cheeses?</h1>
+  <h1 class="fancyFont">all cheeses?</h1>
   
 <!-- search button -->
-  <div class="input-group">
-    <span class="input-group-btn"></span>
-    <input type="text" class="form-control input-lg" placeholder="Search for cheese..." ng-model="search"/>
+  <div class="input-group ">
+    <input type="text" class="form-control input-lg font" placeholder="Search for cheese..." ng-model="search"/>
   </div>
 
 <!-- need to put these into cards -->
   <div ng-repeat="cheese in cheeseArr | filter:search ">
     <div>
-      <h3>{{cheese.name}}</h3>
-      <h3>{{cheese.type}}</h3>
-      <h3>{{cheese.flavorProfile}}</h3>
-      <img ng-src="{{cheese.image}}" class ="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
+      <h3>Cheese: {{cheese.name}}</h3>
+      <h3>Cheese Type: {{cheese.type}}</h3>
+      <h3>Cheese Flavor Profile: {{cheese.flavorProfile}}</h3>
+      <img ng-src="{{cheese.image}}" class ="img-responsive img-thumbnail cheeseSize center-block" alt="Responsive image">
     
-      <button class="btn btn-default" ng-click="getCheesePair(cheese.id)">view all pairs</button>
+      <button class="btn btn-default center-block" ng-click="getCheesePair(cheese.id)">view all pairs</button>
     </div>
   </div>
 
