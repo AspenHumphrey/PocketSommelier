@@ -14,7 +14,6 @@
     <h3>{{cheese.flavorProfile}}</h3>
     <img ng-src="{{cheese.image}}" class="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
     <!-- the button below needs to save pair to favorites -->
-    <button class="btn btn-default" ng-show="isLoggedIn">Save Pair</button>
-  </div>
+    <button class="btn btn-default" ng-show="isLoggedIn" ng-click="savePair(cheese.id, winePair.data.id)">Save Pair</button>
 
 </div>

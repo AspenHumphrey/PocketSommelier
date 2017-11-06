@@ -21,6 +21,7 @@ function createUser(req) {
 function getUser(username) {
   return User.findOne({where: {username: username}})
     .then((data) => {
+      console.log("data", data);
       return data.dataValues;
     });
 }

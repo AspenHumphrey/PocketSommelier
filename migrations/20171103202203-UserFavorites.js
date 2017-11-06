@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      WineCheesesId: {
+      WineCheeseId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

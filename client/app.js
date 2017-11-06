@@ -43,5 +43,6 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/winePair.html',
     controller: 'WinePairCtrl'
   })
+  
   .otherwise('');
 });

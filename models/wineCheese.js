@@ -1,10 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var WineCheese = sequelize.define('WineCheese', {
-    name: DataTypes.STRING,
-    type: DataTypes.STRING,
-    flavorProfile: DataTypes.TEXT,
-    image: DataTypes.TEXT
+    WineId: DataTypes.INTEGER,
+    CheeseId: DataTypes.INTEGER
   }, { timestamps: false } );
 
   WineCheese.associate = (models) => {

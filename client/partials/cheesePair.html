@@ -2,19 +2,20 @@
 
 <div>
   <h1 class="fancyFont">Selected Cheese with related wine(s)</h1>
-
+  <h3>{{cheesePair.data.id}}</h3>
   <h3>{{cheesePair.data.name}}</h3>
   <h3>{{cheesePair.data.type}}</h3>
   <h3>{{cheesePair.data.flavorProfile}}</h3>
   <img ng-src="{{cheesePair.data.image}}" class="img-responsive img-thumbnail cheeseSizze" alt="Responsive image">
 
   <div ng-repeat="wine in cheesePair.data.Wines">
+    <h3>{{wine.id}}</h3>
     <h3>{{wine.name}}</h3>
     <h3>{{wine.type}}</h3>
     <h3>{{wine.flavorProfile}}</h3>
     <img ng-src="{{wine.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
     <!-- the button below needs to save pair to favorites -->
-    <button class="btn btn-default center-block" ng-show="isLoggedIn" ng-click="savePair()">Save Pair</button>
+    <button class="btn btn-default center-block" ng-show="isLoggedIn" ng-click="savePair(cheesePair.data.id, wine.id)">Save Pair</button>
   </div>
 
 </div>
