@@ -1,31 +1,38 @@
 <div ng-include="'client/partials/nav.html'"></div>
 <div>
-  <h1 class="fancyFont ">Random Pair</h1>
 
-    <div class="container-fluid">
+  <!-- <div class="container containerStyles"> -->
+    <!-- <h1 class="fancyFont ">Random Pair</h1> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="homeBtn"> -->
+        <!-- genorates a new random pair run getRandomPairData on click -->
+        <!-- <button class="btn btn-default center-block btnColor" ng-click="newRandomPair()">Random Pair</button> -->
+      <!-- </div> -->
+      <!-- <div class="homeBtn"> -->
+        <!-- view details on the random pair shown -->
+        <!-- <button class="btn btn-default center-block btnColor " ng-click="getRandomPairDetails(id)">Pair Details</button> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+  <div class="container containerStyle">
+    <h1 class="fancyFont ">Random Pair</h1>
+    <!-- genorates a new random pair run getRandomPairData on click -->
+    <button class="btn btn-default btnColor" ng-click="newRandomPair()">Random Pair</button>
+    <!-- view details on the random pair shown -->
+    <button class="btn btn-default btnColor " ng-click="getRandomPairDetails(id)">Pair Details</button>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>{{randomPair.name}}</h3>
+        <img ng-src="{{randomPair.image}}" class="img-responsive img-thumbnail wineSize center-block" alt="Responsive image">
+      </div>
       <div class="row">
-        <div class="col-md-6 ">
-          <h3>{{randomPair.name}}</h3>
-          <img ng-src="{{randomPair.image}}" class="img-responsive img-thumbnail wineSize center-block" alt="Responsive image">
-        </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <h3>{{randomCheese.name}}</h3>
           <img ng-src="{{randomCheese.image}}" class="img-responsive img-thumbnail cheeseSize center-block" alt="Responsive image">
         </div>
       </div>
     </div>
- 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6 homeBtn ">
-        <!-- genorates a new random pair run getRandomPairData on click -->
-        <button class="btn btn-default center-block btnColor" ng-click="newRandomPair()">Random Pair</button>
-      </div>
-      <div class="col-md-6 homeBtn ">
-        <!-- view details on the random pair shown -->
-        <button class="btn btn-default center-block btnColor " ng-click="getRandomPairDetails(id)">Pair Details</button>
-      </div>
-    </div>
   </div>
-  
+
 </div>

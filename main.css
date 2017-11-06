@@ -8,9 +8,10 @@ body {
 
 .navFont {
   font-family: 'Oregano', cursive;
-  font-size: 30px;
+  font-size: 25px;
   color: black;
 }
+
 
 .fancyFont {
   font-family: 'Oregano', cursive;
@@ -23,7 +24,7 @@ h1, h3, h5 {
 
 h3, .font {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .center-block {
@@ -32,8 +33,16 @@ h3, .font {
   margin-right: auto;
 }
 
-.homeBtn {
-  padding-top: 10px;
+.containerStyle {
+  background-color: #ead8a1;
+  border-radius: 4px;
+  padding-bottom: 40px;
+  margin-bottom: 15px;
+}
+
+.containerStyles {
+  background-color: #ead8a1;
+  border-radius: 4px;
 }
 
 .btnColor {
@@ -49,7 +58,3 @@ h3, .font {
   width: 435px;
   height: 600px
 }
-
-/* 
-font-family: 'Oregano', cursive;
-font-family: */
