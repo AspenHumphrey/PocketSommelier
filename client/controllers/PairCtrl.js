@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('PairCtrl', function($scope, PairFact){
+app.controller('PairCtrl', function($scope, PairFact, FavoriteFact){
 
   $scope.isLoggedIn = localStorage.isLoggedIn;
 
@@ -16,6 +16,15 @@ app.controller('PairCtrl', function($scope, PairFact){
   .catch( ( err ) => {
     console.log("whoope", err);
   });
+
+  $scope.savePair = (cheeseId, wineId) => {
+    console.log("cheeseId, wineId", cheeseId, wineId);
+    let username = localStorage.getItem('username');
+  
+    FavoriteFact.saveUserPair(username, cheeseId, wineId); 
+    
+  }
+ 
   
 });
 

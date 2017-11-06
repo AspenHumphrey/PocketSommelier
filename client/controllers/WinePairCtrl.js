@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('WinePairCtrl', function($scope, $routeParams, WineFact){
+app.controller('WinePairCtrl', function($scope, $routeParams, WineFact, FavoriteFact){
   
     WineFact.getOneWineAllCheeses($routeParams.id)
     .then( ( winePair ) => {
@@ -11,4 +11,11 @@ app.controller('WinePairCtrl', function($scope, $routeParams, WineFact){
       console.log("whoope", err);
     });
 
+    $scope.savePair = (cheeseId, wineId) => {
+      console.log("cheeseId, wineId", cheeseId, wineId);
+      let username = localStorage.getItem('username');
+      FavoriteFact.saveUserPair(username, cheeseId, wineId); 
+      
+    }
+   
 });

@@ -47,3 +47,36 @@ module.exports.getUser = (req, res, next) => {
     status: 'success',
   });
 };
+
+
+module.exports.saveToFav = (req, res, next) => {
+  const { WineCheese, User, UserFavorite } = req.app.get('models');
+  const username = req.body.username;
+  let currentUser = null;
+  User.findOne({
+    where: {username: username}
+  })
+  .then(( user ) => {
+    currentUser = user;
+    return WineCheese.findOne({
+      where: { CheeseId: req.body.cheeseId, WineId: req.body.wineId } 
+    })
+  })
+  .then( ( winecheese ) => {
+    console.log("winecheese", winecheese.id);
+    console.log("user", User);
+    // let currentUser = user.dataValues;
+    return UserFavorite.create({ UserId: currentUser.id, WineCheeseId: winecheese.id } );
+  })
+  .then( ( userFav ) => {
+    res.status(200).json({
+      status: 'success'
+    });
+  })
+  .catch((err) => {
+    console.log("err errr err ", err);
+    res.status(500).json({
+      status: 'error'
+    });
+  });
+};

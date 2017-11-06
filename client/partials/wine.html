@@ -1,7 +1,7 @@
 <div ng-include="'client/partials/nav.html'"></div>
 
 <div>
-  <h1>all wines?</h1>
+  <h1 class="fancyFont">all wines?</h1>
   
 <!-- search button -->
   <div class="input-group">
@@ -15,10 +15,10 @@
       <h3>{{wine.name}}</h3>
       <h3>{{wine.type}}</h3>
       <h3>{{wine.flavorProfile}}</h3>
-      <img ng-src="{{wine.image}}">
+      <img ng-src="{{wine.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
       <!-- button goes to one cheese with wine pair(s) -->
       <!-- link to another view only -->
-      <button ng-click="getWinePair(wine.id)">view all pairs</button>
+      <button class="btn btn-default" ng-click="getWinePair(wine.id)">view all pairs</button>
     </div>
   </div>
 
