@@ -48,7 +48,6 @@ module.exports.getUser = (req, res, next) => {
   });
 };
 
-
 module.exports.saveToFav = (req, res, next) => {
   const { WineCheese, User, UserFavorite } = req.app.get('models');
   const username = req.body.username;
@@ -63,9 +62,6 @@ module.exports.saveToFav = (req, res, next) => {
     })
   })
   .then( ( winecheese ) => {
-    console.log("winecheese", winecheese.id);
-    console.log("user", User);
-    // let currentUser = user.dataValues;
     return UserFavorite.create({ UserId: currentUser.id, WineCheeseId: winecheese.id } );
   })
   .then( ( userFav ) => {
@@ -80,3 +76,30 @@ module.exports.saveToFav = (req, res, next) => {
     });
   });
 };
+
+module.exports.getUserFav = (req, res, next) => {
+  const { UserFavorite, User, WineCheese } = req.app.get('models');
+  const username = req.query.username;
+  // let currentUser = null;
+  console.log("USERNAME USERNAME USERNAME !!!!?", username);
+  authHelpers.getUser(username)
+  .then( (user) => {
+    console.log("USER UESR", user);
+    return UserFavorite.findOne({
+      where: { UserId: user.id }
+    })
+  })
+  .then( ( userFavorite ) => {
+    console.log("userFavorite",userFavorite);
+    WineCheese.findAll({
+      where: { id: userFavorite.WineCheeseId } 
+    })
+  })
+  .then( (favorites) => {
+    res.status(200).json(favorites);
+  })
+  .catch( (err ) => {
+    console.log("whoop", err);
+  });
+};
+

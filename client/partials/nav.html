@@ -12,9 +12,8 @@
         <li role="presentation" class="navFont"><a ng-href="#!/pairs" > Pairs</a></li>
         <li role="presentation" class="navFont"><a ng-href="#!/cheese"> Cheese</a></li>
         <li role="presentation" class="navFont"><a ng-href="#!/wine"> Wine</a></li>
+        <li ng-show="isLoggedIn" role="presentation" class="navFont"><a ng-href="#!/favorite"> Favorites</a></li>
         <li ng-show="isLoggedIn" role="presentation" class="navFont"><a ng-href="#!/" ng-click="logout()"> Logout</a></li>
-        <!-- the below is placeholder for favorites -->
-        <!-- <li ng-show="isLoggedIn" role="presentation"><a ng-href="#!/favorites"> Favorites</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
