@@ -78,25 +78,43 @@ module.exports.saveToFav = (req, res, next) => {
 };
 
 module.exports.getUserFav = (req, res, next) => {
-  const { UserFavorite, User, WineCheese } = req.app.get('models');
+  const { UserFavorite, User, WineCheese, Wine, Cheese } = req.app.get('models');
   const username = req.query.username;
-  // let currentUser = null;
-  console.log("USERNAME USERNAME USERNAME !!!!?", username);
+  var pair
+  var returnWine
+  // console.log("USERNAME USERNAME USERNAME !!!!?", username);
   authHelpers.getUser(username)
   .then( (user) => {
-    console.log("USER UESR", user);
+    // console.log("USER UESR", user);
     return UserFavorite.findOne({
       where: { UserId: user.id }
     })
   })
   .then( ( userFavorite ) => {
-    console.log("userFavorite",userFavorite);
-    WineCheese.findAll({
-      where: { id: userFavorite.WineCheeseId } 
+    // console.log("userFavoriteWINECHEESEID", userFavorite.WineCheeseId);
+    return WineCheese.findAll({
+      where: { id: userFavorite.WineCheeseId }
     })
   })
-  .then( (favorites) => {
-    res.status(200).json(favorites);
+  .then( ( wineCheese ) => {
+    pair = wineCheese
+    console.log("WINECHEESE WINECHEESE WINECHEESE", wineCheese);
+    console.log("winecheese.wineId", pair[0].dataValues.WineId);
+    return Wine.findOne({
+      where: { id: pair[0].dataValues.WineId }
+    })
+  })
+  .then( ( wine ) => {
+    console.log("CHEESE CHEESE", pair[0].dataValues.CheeseId);
+    returnWine = wine
+    return Cheese.findOne({
+      where: { id: pair[0].dataValues.CheeseId }
+    })
+  })
+  .then( ( returnCheese ) => {
+   let userFavoritePair = {wine: returnWine, cheese: returnCheese }
+    console.log("favorites", userFavoritePair );
+    res.status(200).json( userFavoritePair );
   })
   .catch( (err ) => {
     console.log("whoop", err);
