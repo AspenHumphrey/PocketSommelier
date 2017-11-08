@@ -24,6 +24,9 @@ app.controller('CheeseCtrl', function($scope, $window, CheeseFact){
     $window.location.href = `#!/cheeseDetail/${id}`
   }
  
+  $scope.getSpokenCheeseName = (cheese) => {
+    $window.responsiveVoice.speak(""+ cheese +"");
+  }
 
   
 });

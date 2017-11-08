@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('WinePairCtrl', function($scope, $routeParams, WineFact, FavoriteFact){
+app.controller('WinePairCtrl', function($scope, $window, $routeParams, WineFact, FavoriteFact){
   
     WineFact.getOneWineAllCheeses($routeParams.id)
     .then( ( winePair ) => {
@@ -15,7 +15,14 @@ app.controller('WinePairCtrl', function($scope, $routeParams, WineFact, Favorite
       console.log("cheeseId, wineId", cheeseId, wineId);
       let username = localStorage.getItem('username');
       FavoriteFact.saveUserPair(username, cheeseId, wineId); 
-      
+    }
+
+    $scope.getSpokenCheeseName = (cheese) => {
+      $window.responsiveVoice.speak(""+ cheese +"");
+    }
+    
+    $scope.getSpokenWineName = (winePair) => {
+      $window.responsiveVoice.speak(""+ winePair +"");
     }
    
 });

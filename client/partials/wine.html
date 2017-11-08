@@ -13,6 +13,7 @@
   <div ng-repeat="wine in wineArr | filter:search ">
     <div>
       <h3>{{wine.name}}</h3>
+      <input ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
       <h3>{{wine.type}}</h3>
       <img ng-src="{{wine.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
       <h3>{{wine.flavorProfile}}</h3>

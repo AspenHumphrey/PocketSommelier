@@ -41,6 +41,10 @@ app.controller('WineCtrl', function($scope, $window, WineFact){
   $scope.getAllWins = (id) => {
     $window.location.href = `#!/wineeDetail/${id}`
   }
+
+  $scope.getSpokenWineName = (wine) => {
+    $window.responsiveVoice.speak(""+ wine +"");
+  }
  
 
   

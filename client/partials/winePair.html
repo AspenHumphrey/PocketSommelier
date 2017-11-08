@@ -4,12 +4,14 @@
   <h1 class="fancyFont">Selected Wine with related cheese(s)</h1>
 
   <h3>{{winePair.data.name}}</h3> 
+  <input ng-click= "getSpokenWineName(winePair.name)" type='button' value='🔊 Play'>
   <h3>{{winePair.data.type}}</h3>
   <h3>{{winePair.data.flavorProfile}}</h3>
   <img  ng-src="{{winePair.data.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
 
   <div ng-repeat="cheese in winePair.data.Cheeses">
     <h3>{{cheese.name}}</h3>
+    <input ng-click= "getSpokenWineName(cheese.name)" type='button' value='🔊 Play'>
     <h3>{{cheese.type}}</h3>
     <h3>{{cheese.flavorProfile}}</h3>
     <img ng-src="{{cheese.image}}" class="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
