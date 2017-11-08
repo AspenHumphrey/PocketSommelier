@@ -69,3 +69,6 @@
 
 ## jQuery
 1. Run npm install jquery
+
+## Responsive Voice 
+1. https://responsivevoice.org/
