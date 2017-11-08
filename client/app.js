@@ -43,6 +43,9 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/winePair.html',
     controller: 'WinePairCtrl'
   })
-  
+  .when('/favorite', {
+    templateUrl: '/client/partials/favorite.html',
+    controller: 'FavoriteCtrl'
+  })
   .otherwise('');
 });

@@ -9,15 +9,20 @@
   </div>
 
 <!-- need to put these into cards -->
-  <div ng-repeat="cheese in cheeseArr | filter:search ">
-    <div>
-      <h3>Cheese: {{cheese.name}}</h3>
-      <h3>Cheese Type: {{cheese.type}}</h3>
-      <h3>Cheese Flavor Profile: {{cheese.flavorProfile}}</h3>
-      <img ng-src="{{cheese.image}}" class ="img-responsive img-thumbnail cheeseSize center-block" alt="Responsive image">
-    
-      <button class="btn btn-default center-block" ng-click="getCheesePair(cheese.id)">view all pairs</button>
+  <div class="container containerStyle">
+    <div class="row">
+        <div ng-repeat="cheese in cheeseArr | filter:search">
+          <div class="col-md-4">
+            <h3>{{cheese.name}}</h3>
+            <input ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{cheese.image}}" class ="img-responsive img-thumbnail cheeseSize center-block" alt="Responsive image">
+            <h4 class="center-block">{{cheese.type}}</h4>
+            <h4>{{cheese.flavorProfile}}</h4>
+            <button class="btn btn-default center-block" ng-click="getCheesePair(cheese.id)">view all pairs</button>
+          </div>
+        </div>
     </div>
   </div>
 
+  
 </div>

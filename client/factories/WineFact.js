@@ -5,7 +5,6 @@ app.factory("WineFact", function($q, $http){
     return $q( ( resolve, reject ) => {
       $http.get('http://localhost:4000/wine')
       .then( ( wines ) => {
-        console.log("wines", wines.data);
         resolve( wines.data );
       })
       .catch( ( err ) => {
@@ -19,7 +18,6 @@ app.factory("WineFact", function($q, $http){
     return $q( ( resolve, reject ) => {
       $http.get(`http://localhost:4000/wine/${id}`)
       .then( ( wine ) => {
-        console.log("wine and cheese ?", wine );
         resolve( wine );
       })
       .catch( ( err ) => {
