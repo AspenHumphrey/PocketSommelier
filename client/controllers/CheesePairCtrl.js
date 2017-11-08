@@ -16,7 +16,6 @@ app.controller('CheesePairCtrl', function($scope, $routeParams, CheeseFact, Favo
   $scope.savePair = (cheeseId, wineId) => {
    
     let username = localStorage.getItem('username');
-    console.log("cheeseId, wineId", cheeseId, wineId, username);
   
     FavoriteFact.saveUserPair(username, cheeseId, wineId); 
     

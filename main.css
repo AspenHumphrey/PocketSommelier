@@ -50,11 +50,21 @@ h3, .font {
 }  
 
 .wineSize {
-  width: 335px;
-  height: 600px
+  width: 60%;
+  height: 80%
 }
 
 .cheeseSize {
-  width: 435px;
-  height: 600px
+  width: 70%;
+  height: 60%
+}
+
+.randomWineSize {
+  width: 335px;
+  height: 600px;
+}
+
+.randomCheeseSize {
+  width: 400px;
+  height: 600px;
 }

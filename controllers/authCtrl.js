@@ -82,16 +82,13 @@ module.exports.getUserFav = (req, res, next) => {
   const username = req.query.username;
   var pair
   var returnWine
-  // console.log("USERNAME USERNAME USERNAME !!!!?", username);
   authHelpers.getUser(username)
   .then( (user) => {
-    // console.log("USER UESR", user);
     return UserFavorite.findOne({
       where: { UserId: user.id }
     })
   })
   .then( ( userFavorite ) => {
-    // console.log("userFavoriteWINECHEESEID", userFavorite.WineCheeseId);
     return WineCheese.findAll({
       where: { id: userFavorite.WineCheeseId }
     })

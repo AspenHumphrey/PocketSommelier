@@ -5,7 +5,6 @@ app.factory("HomeFact", function($q, $http){
     return $q( ( resolve, reject ) => {
       $http.get('http://localhost:4000/pair')
       .then( ( pairData ) => {
-        console.log("parData", pairData.data.id);
         resolve( pairData.data );
       })
       .catch( ( err ) => {
