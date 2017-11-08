@@ -83,7 +83,7 @@ module.exports.getUserFav = (req, res, next) => {
   const username = req.query.username;
   authHelpers.getUser(username)
   .then( (user) => {
-    return sequelize.query( `select w."name", w."image", c."image", c."name" 
+    return sequelize.query( `select w."name" as "wineName", w."image" as "wineImage", c."image", c."name" 
     from "UserFavorites" f 
     left join "Users" u on u.id = f."UserId" 
     left join "WineCheeses" wc on wc.id = f."WineCheeseId" 
