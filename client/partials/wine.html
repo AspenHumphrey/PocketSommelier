@@ -9,17 +9,21 @@
     <input type="text" class="form-control input-lg" placeholder="Search for wine..." ng-model="search"/>
   </div>
 
-<!-- need to put these into cards -->
-  <div ng-repeat="wine in wineArr | filter:search ">
-    <div>
-      <h3>{{wine.name}}</h3>
-      <input ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
-      <h3>{{wine.type}}</h3>
-      <img ng-src="{{wine.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
-      <h3>{{wine.flavorProfile}}</h3>
-      <!-- button goes to one cheese with wine pair(s) -->
-      <!-- link to another view only -->
-      <button class="btn btn-default" ng-click="getWinePair(wine.id)">view all pairs</button>
+  <!-- need to put these into cards -->
+  <div class="container containerStyle">
+    <div class="row">
+      <div ng-repeat="wine in wineArr | filter:search ">
+        <div class="col-md-4">
+            <h3>{{wine.name}}</h3>
+            <input class="btnColor" ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
+            <h3>{{wine.type}}</h3>
+            <img ng-src="{{wine.image}}" class="img-thumbnail wineSize" alt="Responsive image">
+            <h5>{{wine.flavorProfile}}</h5>
+            <!-- button goes to one cheese with wine pair(s) -->
+            <!-- link to another view only -->
+            <button class="btn btn-default btnColor" ng-click="getWinePair(wine.id)">view all pairs</button>
+        </div>
+      </div>
     </div>
   </div>
 

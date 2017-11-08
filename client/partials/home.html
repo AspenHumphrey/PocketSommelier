@@ -9,14 +9,14 @@
     <div class="row">
       <div class="col-md-6">
         <h3>{{randomPair.name}}</h3>
-          <input ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
-        <img ng-src="{{randomPair.image}}" class="img-responsive img-thumbnail wineSize center-block" alt="Responsive image">
+          <input class="btnColor" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
+        <img ng-src="{{randomPair.image}}" class="img-thumbnail wineSize center-block" alt="Responsive image">
       </div>
       <div class="row">
         <div class="col-md-6">
           <h3>{{randomCheese.name}}</h3>
-          <input ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
-          <img ng-src="{{randomCheese.image}}" class="img-responsive img-thumbnail cheeseSize center-block" alt="Responsive image">
+          <input class="btnColor" ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
+          <img ng-src="{{randomCheese.image}}" class="img-thumbnail cheeseSize center-block" alt="Responsive image">
         </div>
       </div>
     </div>

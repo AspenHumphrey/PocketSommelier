@@ -6,20 +6,20 @@
     <div ng-repeat="cheese in pair.Cheeses" class="row">
       <div class="col-md-6">
         <h3>{{pair.name}}</h3>
-        <input ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
+        <input class="btnColor" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
         <h3>{{pair.type}}</h3>
         <h3>{{pair.flavorProfile}}</h3>
         <img ng-src="{{pair.image}}" class="img-responsive img-thumbnail wineSize" alt="Responsive image">
       </div>
       <div class="col-md-6">
         <h3>{{cheese.name}}</h3>
-        <input ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+        <input class="btnColor" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
         <h3>{{cheese.type}}</h3>
         <h3>{{cheese.flavorProfile}}</h3>
         <img ng-src="{{cheese.image}}" class="img-responsive img-thumbnail cheeseSize" alt="Responsive image">
       </div>
       <!-- the button below needs to save pair to favorites -->
-      <button class="btn btn-default" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
+      <button class="btn btn-default btnColor" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
     </div>
   </div>
 

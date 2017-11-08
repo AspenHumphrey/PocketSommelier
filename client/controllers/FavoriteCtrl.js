@@ -32,13 +32,8 @@ app.controller('FavoriteCtrl', function($scope, FavoriteFact){
 
   FavoriteFact.getUserPair(localStorage.getItem('username'))
   .then( ( userPairData ) => {
-    console.log("userPAIR ", userPairData);
-    $scope.userPairArr = [];
-    $scope.userPairData = userPairData
-    angular.forEach($scope.userPairData, function(userPair){
-      $scope.userPairArr.push(userPair);
-    });
-    console.log("$scope.userPairArr", $scope.userPairArr);
+    console.log("userPAIR ", userPairData.data[0]);
+    $scope.userPairData = userPairData.data[0]
   })
   .catch( ( err ) => {
     console.log("whoope", err);

@@ -78,40 +78,22 @@ module.exports.saveToFav = (req, res, next) => {
 };
 
 module.exports.getUserFav = (req, res, next) => {
-  const { UserFavorite, User, WineCheese, Wine, Cheese } = req.app.get('models');
+  const { sequelize, UserFavorite, User, WineCheese, Wine, Cheese } = req.app.get('models');
+  // const { sequelize } = req.app.get('models');
   const username = req.query.username;
-  var pair
-  var returnWine
   authHelpers.getUser(username)
   .then( (user) => {
-    return UserFavorite.findOne({
-      where: { UserId: user.id }
-    })
+    return sequelize.query( `select w."name" as "wineName", w."image" as "wineImage", c."image", c."name" 
+    from "UserFavorites" f 
+    left join "Users" u on u.id = f."UserId" 
+    left join "WineCheeses" wc on wc.id = f."WineCheeseId" 
+    left join "Wines" w on w.id = wc."WineId" 
+    left join "Cheeses" c on c.id = wc."CheeseId" 
+    where u.id = 1;`)
   })
-  .then( ( userFavorite ) => {
-    return WineCheese.findAll({
-      where: { id: userFavorite.WineCheeseId }
-    })
-  })
-  .then( ( wineCheese ) => {
-    pair = wineCheese
-    console.log("WINECHEESE WINECHEESE WINECHEESE", wineCheese);
-    console.log("winecheese.wineId", pair[0].dataValues.WineId);
-    return Wine.findOne({
-      where: { id: pair[0].dataValues.WineId }
-    })
-  })
-  .then( ( wine ) => {
-    console.log("CHEESE CHEESE", pair[0].dataValues.CheeseId);
-    returnWine = wine
-    return Cheese.findOne({
-      where: { id: pair[0].dataValues.CheeseId }
-    })
-  })
-  .then( ( returnCheese ) => {
-   let userFavoritePair = {wine: returnWine, cheese: returnCheese }
-    console.log("favorites", userFavoritePair );
-    res.status(200).json( userFavoritePair );
+  .then( ( data ) => {
+    console.log("data", data);
+    res.status(200).json( data );
   })
   .catch( (err ) => {
     console.log("whoop", err);
