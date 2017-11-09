@@ -6,6 +6,16 @@
   background-size: cover;
 }
 
+.backgroundImgHome {
+  background-image: url("../client/images/goldBackground.jpg");
+  background-repeat: repeat-y;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+
 .navbar {
   margin-bottom: 0;
 }
