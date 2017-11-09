@@ -2,6 +2,14 @@ body {
   background-color: #f0e5c4;
 }
 
+/* .homeImg {
+  background-image: url("../images/randomPair.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+} */
+
 .navStyle {
   background-color: #d2b25b;
 }
@@ -19,16 +27,21 @@ body {
   font-size: 45px;
 }
 
-h3, h5, .font {
+h3, .font {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: center;
+  padding: 5%;
 }
 
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.search {
+  text-align: center;
 }
 
 .containerStyle {
@@ -38,22 +51,37 @@ h3, h5, .font {
   margin-bottom: 15px;
 }
 
-.containerStyles {
-  background-color: #ead8a1;
-  border-radius: 4px;
-}
-
 .btnColor {
   background-color: #c39e3a;
 }  
 
 .wineSize {
-  width: 60%;
-  height: 70%
+
+  max-width: 45%;
+  max-height: 50%;
+  border-radius: 5px;
 }
 
 .cheeseSize {
-  width: 90%;
-  height: 95%
+  min-width: 90%;
+  max-width: 95%;
+  min-height: 95%;
+  max-height: 100%;
+  border-radius: 5px;
 }
 
+.card {
+  max-height: 55%;
+  max-width: 100%;
+  background-color:#bf99308c;
+  padding-bottom: 15%;
+  margin: 5%;
+}
+
+.cheeseCard {
+  max-width: 50%;
+  height: 100%;
+  background-color: blue;
+  padding-bottom: 20%;
+  margin-top: 5%;
+}

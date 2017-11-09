@@ -11,7 +11,6 @@ app.controller('PairCtrl', function($scope, $window, PairFact, FavoriteFact){
     angular.forEach($scope.pairsArrData, function(pair){
       $scope.pairsArr.push(pair);
     });
-    console.log("$scope.pairsArr", $scope.pairsArr);
   })
   .catch( ( err ) => {
     console.log("whoope", err);

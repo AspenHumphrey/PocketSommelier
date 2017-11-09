@@ -1,18 +1,18 @@
 <div ng-include="'client/partials/nav.html'"></div>
-<div>
+<div class="homeImg">
   <div class="container containerStyle">
     <h1 class="fancyFont ">Random Pair</h1>
     <!-- genorates a new random pair run getRandomPairData on click -->
     <button class="btn btn-default btnColor" ng-click="newRandomPair()">Random Pair</button>
     <!-- view details on the random pair shown -->
     <button class="btn btn-default btnColor " ng-click="getRandomPairDetails(id)">Pair Details</button>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>{{randomPair.name}}</h3>
-          <input class="btnColor" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
-        <img ng-src="{{randomPair.image}}" class="img-thumbnail wineSize center-block" alt="Responsive image">
-      </div>
+    <div class="card center-block">
       <div class="row">
+        <div class="col-md-6">
+          <h3>{{randomPair.name}}</h3>
+          <input class="btnColor" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
+          <img ng-src="{{randomPair.image}}" class="img-thumbnail wineSize center-block" alt="Responsive image">
+        </div>
         <div class="col-md-6">
           <h3>{{randomCheese.name}}</h3>
           <input class="btnColor" ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
