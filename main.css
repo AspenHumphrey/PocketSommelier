@@ -42,27 +42,28 @@
 }
 
 .search {
-  /* margin: 0 auto; */
   display: flex;
   justify-content: center;
 }
 
 .containerStyle {
-  background-color: #ead8a1;
+  background-color: #f3d98bb7;
+  opacity: 0.95;
   border-radius: 4px;
   padding-bottom: 40px;
   margin-bottom: 15px;
 }
 
-.wineSize {
-  max-width: 50%;
-}
 
 .cheeseContainer {
   overflow: hidden;
   box-sizing: border-box;
-  /* border: solid 1px black; */
+  border-bottom: solid 1px black;
   height: 500px;
+}
+
+.wineSize {
+  max-width: 30%;
 }
 
 .cheeseImg {
@@ -79,10 +80,16 @@
   right: 15%;
 }  
 
-.playBtnWine {
+.playBtnWinePairs {
   background-color: #c39e3a;
   position: absolute;
   right: 25%;
+}
+
+.playBtnWine {
+  background-color: #c39e3a;
+  position: absolute;
+  right: 35%;
 }
 
 .picWrapper {

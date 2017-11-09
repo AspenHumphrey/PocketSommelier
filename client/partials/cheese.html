@@ -14,7 +14,7 @@
     <div class="row">
       <div ng-repeat="cheese in cheeseArr | filter:search">
         <div class="col-sm-4 cheeseContainer">
-          <h3>{{cheese.name}}</h3>
+          <h1>{{cheese.name}}</h1>
           <div class="picWrapper">
             <img ng-src="{{cheese.image}}" class="cheeseImg">
             <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>

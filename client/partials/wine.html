@@ -3,24 +3,26 @@
 <div class="backgroundImg">
   
 <!-- search button -->
-  <div class="input-group">
-    <span class="input-group-btn"></span>
-    <input type="text" class="form-control input-lg" placeholder="Search for wine..." ng-model="search"/>
+  <div class="search">
+    <div class="input-group">
+      <input type="text" class="form-control input-lg font" placeholder="Search for wine..." ng-model="search"/>
+    </div>
   </div>
 
   <!-- need to put these into cards -->
   <div class="container containerStyle">
     <div class="row">
       <div ng-repeat="wine in wineArr | filter:search ">
-        <div class="col-md-6">
-            <h3>{{wine.name}}</h3>
-            <input class="btnColor" ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
-            <h3>{{wine.type}}</h3>
-            <img ng-src="{{wine.image}}" class="img-thumbnail wineSize" alt="Responsive image">
-            <h5>{{wine.flavorProfile}}</h5>
-            <!-- button goes to one cheese with wine pair(s) -->
-            <!-- link to another view only -->
-            <button class="btn btn-default btnColor" ng-click="getWinePair(wine.id)">view all pairs</button>
+        <div class="col-md-6 cheeseContainer">
+          <h1>{{wine.name}}</h1>
+          <div class="picWrapper">
+            <input class="playBtnWine" ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{wine.image}}" class="wineSize">
+          </div>
+          <!-- button goes to one cheese with wine pair(s) -->
+          <button class="btn btn-default pairsBtn" ng-click="getWinePair(wine.id)">view all pairs</button>
+          <h5 class="center-block">{{wine.type}}</h5>
+          <p>{{wine.flavorProfile}}</p>
         </div>
       </div>
     </div>
