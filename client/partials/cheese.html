@@ -3,28 +3,28 @@
 <div>
   <h1 class="fancyFont">all cheeses?</h1>
   
-<!-- search button -->
-  <div class="search">
-    <div class="input-group">
-      <input type="text" class="form-control input-lg font" placeholder="Search for cheese..." ng-model="search"/>
-    </div>
-  </div>
-
-<!-- need to put these into cards -->
-  <div class="containerStyle">
-    <div class="row">
-        <div ng-repeat="cheese in cheeseArr | filter:search">
-          <div class="cheeseCard">
-            <div class="col-md-6">
-              <h3>{{cheese.name}}</h3>
-              <input class="btnColor" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
-              <img ng-src="{{cheese.image}}" class =" cheeseSize">
-              <h4 class="center-block">{{cheese.type}}</h4>
-              <h4>{{cheese.flavorProfile}}</h4>
-              <button class="btn btn-default center-block btnColor" ng-click="getCheesePair(cheese.id)">view all pairs</button>
-            </div>
-          </div>
+  
+  <!-- need to put these into cards -->
+  <div class="container containerStyle">
+    <!-- search button -->
+      <div class="search">
+        <div class="input-group">
+          <input type="text" class="form-control input-lg font" placeholder="Search for cheese..." ng-model="search"/>
         </div>
+      </div>
+    <div class="row">
+      <div ng-repeat="cheese in cheeseArr | filter:search">
+        <div class="col-sm-4 cheeseContainer">
+          <h3>{{cheese.name}}</h3>
+          <div class="picWrapper">
+            <img ng-src="{{cheese.image}}" class="cheeseImg">
+            <input class="playBtn" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+          </div>
+          <button class="btn btn-default pairsBtn" ng-click="getCheesePair(cheese.id)">view all pairs</button>
+          <h5 class="center-block">{{cheese.type}}</h5>
+          <p>{{cheese.flavorProfile}}</p>
+        </div>
+      </div>
     </div>
   </div>
 

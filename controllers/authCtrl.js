@@ -79,7 +79,6 @@ module.exports.saveToFav = (req, res, next) => {
 
 module.exports.getUserFav = (req, res, next) => {
   const { sequelize, UserFavorite, User, WineCheese, Wine, Cheese } = req.app.get('models');
-  // const { sequelize } = req.app.get('models');
   const username = req.query.username;
   authHelpers.getUser(username)
   .then( (user) => {
@@ -92,7 +91,6 @@ module.exports.getUserFav = (req, res, next) => {
     where u.id = 1;`)
   })
   .then( ( data ) => {
-    console.log("data", data);
     res.status(200).json( data );
   })
   .catch( (err ) => {

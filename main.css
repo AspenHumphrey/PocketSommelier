@@ -1,5 +1,5 @@
 body {
-  background-color: #f0e5c4;
+  background-color: #FDFDFD;
 }
 
 /* .homeImg {
@@ -10,8 +10,9 @@ body {
   height: 100vh;
 } */
 
-.navStyle {
-  background-color: #d2b25b;
+.navStyle, a {
+  background-color: rgba(230, 201, 109, 0.815);
+  color: black;
 }
 
 .navFont, h1 {
@@ -27,7 +28,7 @@ body {
   font-size: 45px;
 }
 
-h3, .font {
+.font {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: center;
@@ -51,23 +52,42 @@ h3, .font {
   margin-bottom: 15px;
 }
 
-.btnColor {
-  background-color: #c39e3a;
-}  
-
 .wineSize {
-
   max-width: 45%;
   max-height: 50%;
   border-radius: 5px;
 }
 
-.cheeseSize {
-  min-width: 90%;
-  max-width: 95%;
-  min-height: 95%;
-  max-height: 100%;
-  border-radius: 5px;
+.cheeseContainer {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.cheeseImg {
+  max-width: 70%;
+}
+
+.p {
+  padding: 0 3%;
+}
+
+.playBtn {
+  background-color: #c39e3a;
+  position: absolute;
+  right: 15%;
+}  
+
+.picWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.pairsBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translate(50%, 0);
 }
 
 .card {
@@ -76,12 +96,4 @@ h3, .font {
   background-color:#bf99308c;
   padding-bottom: 15%;
   margin: 5%;
-}
-
-.cheeseCard {
-  max-width: 50%;
-  height: 100%;
-  background-color: blue;
-  padding-bottom: 20%;
-  margin-top: 5%;
 }
