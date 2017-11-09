@@ -4,7 +4,7 @@ const localAuth = require('./local.js');
 
 
 function createUser(req) {
-  console.log("password",req.body.password)
+  // console.log("password",req.body.password)
   const salt = bcrypt.genSaltSync();
   const hash = bcrypt.hashSync(req.body.password, salt);
   return User
@@ -21,7 +21,7 @@ function createUser(req) {
 function getUser(username) {
   return User.findOne({where: {username: username}})
     .then((data) => {
-      console.log("data", data);
+      // console.log("data", data);
       return data.dataValues;
     });
 }

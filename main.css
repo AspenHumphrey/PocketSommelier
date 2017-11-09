@@ -72,6 +72,13 @@
   height: 500px;
 }
 
+.wineContainer {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: solid 1px black;
+  height: 625px;
+}
+
 .wineSize {
   max-width: 30%;
 }
@@ -82,6 +89,7 @@
 
 .p {
   padding: 0 3%;
+  font-size: 15px;
 }
 
 .playBtnCheese {
