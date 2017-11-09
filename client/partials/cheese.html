@@ -1,8 +1,6 @@
 <div ng-include="'client/partials/nav.html'"></div>
 
-<div>
-  <h1 class="fancyFont">all cheeses?</h1>
-  
+<div class="backgroundImg">
   
   <!-- need to put these into cards -->
   <div class="container containerStyle">
@@ -12,13 +10,14 @@
           <input type="text" class="form-control input-lg font" placeholder="Search for cheese..." ng-model="search"/>
         </div>
       </div>
+
     <div class="row">
       <div ng-repeat="cheese in cheeseArr | filter:search">
         <div class="col-sm-4 cheeseContainer">
           <h3>{{cheese.name}}</h3>
           <div class="picWrapper">
             <img ng-src="{{cheese.image}}" class="cheeseImg">
-            <input class="playBtn" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+            <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
           </div>
           <button class="btn btn-default pairsBtn" ng-click="getCheesePair(cheese.id)">view all pairs</button>
           <h5 class="center-block">{{cheese.type}}</h5>

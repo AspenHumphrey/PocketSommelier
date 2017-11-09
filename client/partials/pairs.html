@@ -1,25 +1,26 @@
 <div ng-include="'client/partials/nav.html'"></div>
-<div>
-  <h1 class="fancyFont">All Wine and Cheese Pairs</h1>
+<div class="backgroundImg">
 
 <div class="container containerStyle">
   <div class="row">
     <div ng-repeat="pair in pairsArr">
       <div ng-repeat="cheese in pair.Cheeses">
-        <div class="card center-block">
-          <div class="col-md-6">
-            <h3>{{pair.name}}</h3>
-            <input class="btnColor" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
+        <div class="col-sm-6 cheeseContainer">
+          <h3>{{pair.name}}</h3>
+          <div class="picWrapper">
+            <input class="playBtnWine" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
             <img ng-src="{{pair.image}}" class=" wineSize">
           </div>
-          <div class="col-md-6">
-            <h3>{{cheese.name}}</h3>
-            <input class="btnColor" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
-            <img ng-src="{{cheese.image}}" class=" cheeseSize">
-          </div>
-            <!-- the button below needs to save pair to favorites -->
-            <button class="btn btn-default btnColor" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
         </div>
+        <div class="col-sm-6 cheeseContainer">
+          <h3>{{cheese.name}}</h3>
+          <div class="picWrapper">
+            <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{cheese.image}}" class=" cheeseImg">
+          </div>
+          <button class="btn btn-default pairsBtn" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
+        </div>
+          <!-- the button below needs to save pair to favorites -->
       </div>
     </div>
   </div>

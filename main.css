@@ -1,14 +1,14 @@
-body {
-  background-color: #FDFDFD;
+.backgroundImg {
+  background-image: url("../client/images/goldBackground.jpg");
+  background-repeat: repeat-y;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/* .homeImg {
-  background-image: url("../images/randomPair.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-} */
+.navbar {
+  margin-bottom: 0;
+}
 
 .navStyle, a {
   background-color: rgba(230, 201, 109, 0.815);
@@ -28,7 +28,7 @@ body {
   font-size: 45px;
 }
 
-.font {
+.font, h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   text-align: center;
@@ -42,7 +42,9 @@ body {
 }
 
 .search {
-  text-align: center;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
 }
 
 .containerStyle {
@@ -53,14 +55,13 @@ body {
 }
 
 .wineSize {
-  max-width: 45%;
-  max-height: 50%;
-  border-radius: 5px;
+  max-width: 50%;
 }
 
 .cheeseContainer {
   overflow: hidden;
   box-sizing: border-box;
+  /* border: solid 1px black; */
   height: 500px;
 }
 
@@ -72,11 +73,17 @@ body {
   padding: 0 3%;
 }
 
-.playBtn {
+.playBtnCheese {
   background-color: #c39e3a;
   position: absolute;
   right: 15%;
 }  
+
+.playBtnWine {
+  background-color: #c39e3a;
+  position: absolute;
+  right: 25%;
+}
 
 .picWrapper {
   position: relative;
