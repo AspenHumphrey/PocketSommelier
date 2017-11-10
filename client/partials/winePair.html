@@ -4,7 +4,8 @@
   <div class="container containerStyle">
     <div class="row">
       <div class="wineContainer">
-        <h3>{{winePair.data.name}}</h3> 
+        <h1 class="fancyFont">{{winePair.data.name}} with related cheese(s)</h1>
+        <!-- <h3>{{winePair.data.name}}</h3>  -->
         <div class="picWrapper">
           <input class="playBtnWine" ng-click= "getSpokenWineName(winePair.data.name)" type='button' value='🔊 Play'>
           <img ng-src="{{winePair.data.image}}" class="wineSize">

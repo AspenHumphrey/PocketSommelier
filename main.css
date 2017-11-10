@@ -17,10 +17,13 @@
 
 .navbar {
   margin-bottom: 0;
+  background-image: url("../client/images/goldBackground.jpg");
+  background-size: cover;
 }
 
 .navStyle, a {
-  background-color: rgba(230, 200, 109, 0.692);
+  background-color: rgba(230, 200, 109, 0.541);
+  opacity: 0.9;
   color: black;
 }
 
