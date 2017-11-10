@@ -1,29 +1,26 @@
 <div ng-include="'client/partials/nav.html'"></div>
 <div class="backgroundImg">
-
-<div class="container containerStyle">
-  <div class="row">
-    <div ng-repeat="pair in pairsArr">
-      <div ng-repeat="cheese in pair.Cheeses">
-        <div class="col-sm-6 cheeseContainer">
-          <h3>{{pair.name}}</h3>
-          <div class="picWrapper">
-            <input class="playBtnWine" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
-            <img ng-src="{{pair.image}}" class=" wineSize">
+  <div class="container containerStyle">
+    <div class="row">
+      <div ng-repeat="pair in pairsArr">
+        <div ng-repeat="cheese in pair.Cheeses">
+          <div class="col-sm-6 cheeseContainer">
+            <h3>{{pair.name}}</h3>
+            <div class="picWrapper">
+              <input class="playBtnWine" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
+              <img ng-src="{{pair.image}}" class=" wineSize">
+            </div>
+          </div>
+          <div class="col-sm-6 cheeseContainer">
+            <h3>{{cheese.name}}</h3>
+            <div class="picWrapper">
+              <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
+              <img ng-src="{{cheese.image}}" class="cheeseImg">
+            </div>
+            <button class="btn btn-default pairsBtn" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
           </div>
         </div>
-        <div class="col-sm-6 cheeseContainer">
-          <h3>{{cheese.name}}</h3>
-          <div class="picWrapper">
-            <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
-            <img ng-src="{{cheese.image}}" class=" cheeseImg">
-          </div>
-          <button class="btn btn-default pairsBtn" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
-        </div>
-          <!-- the button below needs to save pair to favorites -->
       </div>
     </div>
   </div>
-</div>
-
 </div>

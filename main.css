@@ -61,8 +61,6 @@
   background-color: #f3d98bb7;
   opacity: 0.95;
   border-radius: 4px;
-  /* margin-bottom: 15px; */
-  /* margin-top: 15px; */
 }
 
 .cheeseContainer {
@@ -122,5 +120,8 @@
   transform: translate(50%, 0);
 }
 
-
+homeBtn {
+  display: flex;
+  justify-content: center;
+}
 
