@@ -16,9 +16,6 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/register.html',
     controller: 'RegisterCtrl'
   })
-  .when('/introduction', {
-    templateUrl: '/client/partials/introduction.html'
-  })
   .when('/pairs', {
     templateUrl: '/client/partials/pairs.html',
     controller: 'PairCtrl'

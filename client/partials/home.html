@@ -8,15 +8,19 @@
     <button class="btn btn-default btn-large btnColor " ng-click="getRandomPairDetails(id)">Pair Details</button>
     <div class="center-block">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 cheeseContainer">
           <h3>{{randomPair.name}}</h3>
-          <input class="btnColor btn-sm" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
-          <img ng-src="{{randomPair.image}}" class="img-thumbnail wineSize center-block" alt="Responsive image">
+          <div class="picWrapper">
+            <input class="playBtnWine" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{randomPair.image}}" class="wineSize">
+          </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 cheeseContainer">
           <h3>{{randomCheese.name}}</h3>
-          <input class="btnColor" ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
-          <img ng-src="{{randomCheese.image}}" class="img-thumbnail cheeseSize center-block" alt="Responsive image">
+          <div class="picWrapper">
+            <input class="playBtnCheese" ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{randomCheese.image}}" class="cheeseImg">
+          </div>
         </div>
       </div>
     </div>

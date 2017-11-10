@@ -1,19 +1,19 @@
-<nav class="navbar navbar-inverse navStyle" ng-controller="NavCtrl">
+<nav class="navbar navbar-default" ng-controller="NavCtrl">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand navFont" href="#/">Pocket Sommelier</a>
-    </div>
+    <!-- <div class="navbar-header">
+      <a class="navbar-brand navStyle" href="#/">Pocket Sommelier</a>
+    </div> -->
  <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav nav-tabs nav-justified">
-        <li ng-hide="isLoggedIn" role="presentation navigation" class="  navFont"><a ng-href="#!/login"> Login</a></li>
-        <li ng-hide="isLoggedIn" role="presentation navigation" class=" navFont"><a ng-href="#!/register"> Register</a></li>
-        <li role="presentation navigation" class=" navFont"><a ng-href="#!/introduction"> Intro</a></li>        
-        <li role="presentation navigation" class=" navFont"><a ng-href="#!/pairs" > Pairs</a></li>
-        <li role="presentation navigation" class=" navFont"><a ng-href="#!/cheese"> Cheese</a></li>
-        <li role="presentation navigation" class=" navFont"><a ng-href="#!/wine"> Wine</a></li>
-        <li ng-show="isLoggedIn" role="presentation navigation" class=" navFont"><a ng-href="#!/favorite"> Favorites</a></li>
-        <li ng-show="isLoggedIn" role="presentation navigation" class=" navFont"><a ng-href="#!/" ng-click="logout()"> Logout</a></li>
+      <ul class="nav nav-tabs nav-justified navFont navStyle">
+        <li ng-hide="isLoggedIn" role="presentation navigation" class="navFont"><a ng-href="#!/login"> Login</a></li>
+        <li ng-hide="isLoggedIn" role="presentation navigation" class="navFont"><a ng-href="#!/register"> Register</a></li>
+        <li role="presentation navigation" class="navFont"><a ng-href"#/">Pocket Sommelier</a></li>
+        <li role="presentation navigation" class="navFont"><a ng-href="#!/pairs" > Pairs</a></li>
+        <li role="presentation navigation" class="navFont"><a ng-href="#!/cheese"> Cheese</a></li>
+        <li role="presentation navigation" class="navFont"><a ng-href="#!/wine"> Wine</a></li>
+        <li ng-show="isLoggedIn" role="presentation navigation" class="navFont"><a ng-href="#!/favorite"> Favorites</a></li>
+        <li ng-show="isLoggedIn" role="presentation navigation" class="navFont"><a ng-href="#!/" ng-click="logout()"> Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
