@@ -1,19 +1,24 @@
 <div ng-include="'client/partials/nav.html'"></div>
-<!-- <h3>{{userPairData}}</h3> -->
-<!-- <h3>{{userPairData.name}}</h3> -->
 <div class="backgroundImg">
   <div class="container containerStyle">
     <div class="row">
       <div ng-repeat="pair in userPairData">
-        <div class="col-md-6">
+        <div class="col-md-6 cheeseContainer">
           <h3>{{pair.wineName}}</h3>
-          <img ng-src="{{pair.wineImage}}" class=" wineSize">
+          <div class="picWrapper">
+            <input class="playBtnWine" ng-click= "getSpokenWineName(pair.wineName)" type='button' value='🔊 Play'>
+            <img ng-src="{{pair.wineImage}}" class="wineSize">
+          </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 cheeseContainer">
           <h3>{{pair.name}}</h3>
-          <img ng-src="{{pair.image}}" class=" cheeseSize">
+          <div class="picWrapper">
+            <input class="playBtnCheese" ng-click= "getSpokenCheeseName(pair.name)" type='button' value='🔊 Play'>
+            <img ng-src="{{pair.image}}" class="cheeseImg">
+          </div>
         </div>
       </div>
     </div>      
   </div>
 </div>
+

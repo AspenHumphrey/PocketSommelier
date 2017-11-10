@@ -122,10 +122,5 @@
   transform: translate(50%, 0);
 }
 
-.card {
-  max-height: 55%;
-  max-width: 100%;
-  background-color:#bf99308c;
-  padding-bottom: 15%;
-  margin: 5%;
-}
+
+

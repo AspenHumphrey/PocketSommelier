@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('FavoriteCtrl', function($scope, FavoriteFact){
+app.controller('FavoriteCtrl', function($scope, $window, FavoriteFact){
 
   $scope.savePair = (cId, wId) => {
     let username = localStorage.getItem('username');
@@ -23,5 +23,13 @@ app.controller('FavoriteCtrl', function($scope, FavoriteFact){
   .catch( ( err ) => {
     console.log("whoope", err);
   });
+
+  $scope.getSpokenCheeseName = (cheese) => {
+    $window.responsiveVoice.speak(""+ cheese +"");
+  }
+  
+  $scope.getSpokenWineName = (wine) => {
+    $window.responsiveVoice.speak(""+ wine +"");
+  }
 
 }); 
