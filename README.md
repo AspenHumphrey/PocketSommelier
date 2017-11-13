@@ -1,6 +1,5 @@
 # PocketSommelier
 
-## Technologies:
 ## Server-Side:  NodeJS, NodeMon, PostgreSQL, Express, Body-Parser, Sequelize
 ## Front-End: AngularJS, Bootstrap v3.3.7, CSS, Firebase
 
