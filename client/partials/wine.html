@@ -14,14 +14,14 @@
     <div class="row">
       <div ng-repeat="wine in wineArr | filter:search ">
         <div class="col-md-6 wineContainer">
-          <h1>{{wine.name}}</h1>
+          <h1 class="fancyFont">{{wine.name}}</h1>
           <div class="picWrapper">
             <input class="playBtnWine" ng-click= "getSpokenWineName(wine.name)" type='button' value='🔊 Play'>
             <img ng-src="{{wine.image}}" class="wineSize">
           </div>
           <!-- button goes to one cheese with wine pair(s) -->
-          <button class="btn btn-default pairsBtn" ng-click="getWinePair(wine.id)">view all pairs</button>
-          <h5 class="center-block">{{wine.type}}</h5>
+          <button class="btn btn-default savePairsBtn" ng-click="getWinePair(wine.id)">view all pairs</button>
+          <h5 class="center-block p">{{wine.type}}</h5>
           <p class="p">{{wine.flavorProfile}}</p>
         </div>
       </div>

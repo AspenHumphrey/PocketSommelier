@@ -11,14 +11,14 @@
     <div class="center-block">
       <div class="row">
         <div class="col-md-6 cheeseContainer">
-          <h3>{{randomPair.name}}</h3>
+          <h3 class="fancyFont">{{randomPair.name}}</h3>
           <div class="picWrapper">
             <input class="playBtnWine" ng-click= "getSpokenWineName(randomPair.name)" type='button' value='🔊 Play'>
             <img ng-src="{{randomPair.image}}" class="wineSize">
           </div>
         </div>
         <div class="col-md-6 cheeseContainer">
-          <h3>{{randomCheese.name}}</h3>
+          <h3 class="fancyFont">{{randomCheese.name}}</h3>
           <div class="picWrapper">
             <input class="playBtnCheese" ng-click= "getSpokenCheeseName(randomCheese.name)" type='button' value='🔊 Play'>
             <img ng-src="{{randomCheese.image}}" class="cheeseImg">

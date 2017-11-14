@@ -4,14 +4,14 @@
     <div class="row">
       <div ng-repeat="pair in userPairData">
         <div class="col-md-6 cheeseContainer">
-          <h3>{{pair.wineName}}</h3>
+          <h3 class="fancyFont">{{pair.wineName}}</h3>
           <div class="picWrapper">
             <input class="playBtnWine" ng-click= "getSpokenWineName(pair.wineName)" type='button' value='🔊 Play'>
             <img ng-src="{{pair.wineImage}}" class="wineSize">
           </div>
         </div>
         <div class="col-md-6 cheeseContainer">
-          <h3>{{pair.name}}</h3>
+          <h3 class="fancyFont">{{pair.name}}</h3>
           <div class="picWrapper">
             <input class="playBtnCheese" ng-click= "getSpokenCheeseName(pair.name)" type='button' value='🔊 Play'>
             <img ng-src="{{pair.image}}" class="cheeseImg">
