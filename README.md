@@ -118,19 +118,20 @@ This page displays all of the saved favorites for that particular logged in user
 1. https://responsivevoice.org/
 
 # Version 2 Goals:
-1. User will be able to organize/rank thier favorites
-2. Add more Cheese & Wine Pairings
-3. Add Tips & Tricks Section
-4. Add Chocolate Pairings
-5. Add beer to wine pairing - if you like this beer try this wine!
-6. Add recipies and desert suggestions for each wine & cheese
+1. User will be able to organize/rank thier favorites [ ] 
+2. Add more Cheese & Wine Pairings [ ]
+3. Add Tips & Tricks Section [ ] 
+4. Add Chocolate Pairings [ ] 
+5. Add beer to wine pairing - if you like this beer try this wine! [ ]
+6. Add recipies and desert suggestions for each wine & cheese [ ]
 7. Add a Quizes section:
-  - Discover your Pallet!
-  - How well do you know wine?
-  - How well do you know cheese?
-  - What does your favorite pair say about you!
-8. Add an Introduction page: about Pocket Sommelier and how to use. 
+  - Discover your Pallet! [ ]
+  - How well do you know wine? [ ]
+  - How well do you know cheese? [ ]
+  - What does your favorite pair say about you! [ ]
+8. Add an Introduction page: about Pocket Sommelier and how to use. [ ]
 9. The user will be able to filter Cheese/Wine by type: 
-  - on cheese page filter by: soft/semi-soft/semi-hard/hard
-  - on wine page filter by: red/white
-10. The user will be able to remove pairs from their favorites 
+  - on cheese page filter by: soft/semi-soft/semi-hard/hard [ ]
+  - on wine page filter by: red/white [ ]
+10. The user will be able to remove pairs from their favorites [ ]
+11. Add more details to Pairs page [x]
