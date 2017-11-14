@@ -134,4 +134,4 @@ This page displays all of the saved favorites for that particular logged in user
 - [ ]      - on cheese page filter by: soft/semi-soft/semi-hard/hard 
 - [ ]      - on wine page filter by: red/white 
 - [ ] 10. The user will be able to remove pairs from their favorites 
-- [x] 11. Add more details to Pairs page 
+- [x] 11. Add more details to Pairs page Date Checked: November 14th
