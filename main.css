@@ -113,15 +113,19 @@
   text-align: center;
 }
 
-.pairsBtn {
+.savePairsBtn {
   position: absolute;
   bottom: 10px;
   right: 50%;
   transform: translate(50%, 0);
 }
 
-homeBtn {
+.homeBtn {
   display: flex;
   justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
 }
+
+
 

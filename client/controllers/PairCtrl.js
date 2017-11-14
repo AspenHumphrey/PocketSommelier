@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('PairCtrl', function($scope, $window, PairFact, FavoriteFact){
+app.controller('PairCtrl', function($scope, $window, $location, PairFact, FavoriteFact){
 
   $scope.isLoggedIn = localStorage.isLoggedIn;
 

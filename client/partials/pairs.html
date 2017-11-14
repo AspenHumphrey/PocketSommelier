@@ -5,19 +5,23 @@
       <div ng-repeat="pair in pairsArr">
         <div ng-repeat="cheese in pair.Cheeses">
           <div class="col-sm-6 cheeseContainer">
-            <h3>{{pair.name}}</h3>
+            <h3 class="fancyFont">{{pair.name}}</h3>
             <div class="picWrapper">
               <input class="playBtnWine" ng-click= "getSpokenWineName(pair.name)" type='button' value='🔊 Play'>
               <img ng-src="{{pair.image}}" class=" wineSize">
             </div>
+            <h5>{{pair.type}}</h5>
+            <p class="p">{{pair.flavorProfile}}</p>
           </div>
           <div class="col-sm-6 cheeseContainer">
-            <h3>{{cheese.name}}</h3>
+            <h3 class="fancyFont">{{cheese.name}}</h3>
             <div class="picWrapper">
               <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
               <img ng-src="{{cheese.image}}" class="cheeseImg">
             </div>
-            <button class="btn btn-default pairsBtn" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
+            <h5>{{cheese.type}}</h5>
+            <p class="p">{{cheese.flavorProfile}}</p>
+            <button class="btn btn-default savePairsBtn" ng-click="savePair(cheese.id, pair.id)">Save Pair</button>
           </div>
         </div>
       </div>
