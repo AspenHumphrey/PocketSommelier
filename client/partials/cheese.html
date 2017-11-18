@@ -14,13 +14,13 @@
     <div class="row">
       <div ng-repeat="cheese in cheeseArr | filter:search">
         <div class="col-sm-4 cheeseContainer">
-          <h1>{{cheese.name}}</h1>
+          <h1 class="fancyFont">{{cheese.name}}</h1>
           <div class="picWrapper">
             <img ng-src="{{cheese.image}}" class="cheeseImg">
             <input class="playBtnCheese" ng-click= "getSpokenCheeseName(cheese.name)" type='button' value='🔊 Play'>
           </div>
-          <button class="btn btn-default pairsBtn" ng-click="getCheesePair(cheese.id)">view all pairs</button>
-          <h5 class="center-block">{{cheese.type}}</h5>
+          <button class="btn btn-default savePairsBtn" ng-click="getCheesePair(cheese.id)">view all pairs</button>
+          <h5 class="p">{{cheese.type}}</h5>
           <p class="p">{{cheese.flavorProfile}}</p>
         </div>
       </div>

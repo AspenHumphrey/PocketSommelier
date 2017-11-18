@@ -16,13 +16,13 @@ app.config( ($routeProvider) => {
     templateUrl: '/client/partials/register.html',
     controller: 'RegisterCtrl'
   })
-  .when('/pairs', {
-    templateUrl: '/client/partials/pairs.html',
-    controller: 'PairCtrl'
-  })
   .when('/singlePair', {
     templateUrl: '/client/partials/pairDetails.html',
     controller: 'PairDetailCtrl'
+  })
+  .when('/pairs', {
+    templateUrl: '/client/partials/pairs.html',
+    controller: 'PairCtrl'
   })
   .when('/cheese', {
     templateUrl: '/client/partials/cheese.html',
